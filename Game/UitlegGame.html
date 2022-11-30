@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Uitleg.css"/>
+    <title>Uitleg Game</title>
+</head>
+<body>
+    
+    <header>
+
+        <img src="final charactar.png" alt="" style="margin-top:5px; margin-left:50px;" height="80px" width="80px">
+    
+        <nav>
+          <a href="x">Homepage</a>
+              
+          <div class="SearchMenu" onmouseleave="turnOn(false)" onmouseenter="turnOn(true)">
+            <a href="x" onmouseover="turnOn(true)">Portofolio's</a>
+            <ul id="myMenu" class="hiddenDropdown">
+              <li><a href="x">Metehan</a></li>
+              <li><a href="neo's portofolio.html">Neo</a></li>
+              <li><a href="x">Aiden</a></li>
+            </ul>
+          </div>
+          <a href="UitlegGame.html">Game Uitleg</a>
+          <a href="x">Game</a>
+          <a href="x"><button>Log in</button></a>
+        </nav>
+    
+      </header>
+
+    <h1>Uitleg van onze Game</h1>
+    
+    <div class="box">
+        <div class="txt">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Facilis cum fuga qui quae blanditiis inventore necessitatibus
+            nostrum debitis veritatis laboriosam possimus ipsum provident
+            fugit vero sapiente, nemo cumque eligendi ea.
+
+            <img src="temp.jpg" alt="">
+
+        </div>
+    </div>
+
+    <footer><p>Copyright MNA</p></footer>
+    
+<script>
+  function turnOn(isOn) {
+    item = document.getElementById("myMenu");
+    if (isOn) {
+      item.classList.remove('hiddenDropdown')
+    } else {
+      item.classList.add("hiddenDropdown")
+    }
+  }
+</script>
+    
+</body>
+</html>

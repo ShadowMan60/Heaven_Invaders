@@ -1,0 +1,106 @@
+Body {
+    background-color:black;
+    color:white;
+}
+header  {
+    display: flex;
+    align-items: center;
+    height: 80px;
+}
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+a   {
+    
+    margin-right: 50px;
+    color: white;
+    gap: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+button {
+    border-radius: 20px;
+    width: 100px;
+    height: 40px;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    margin: 15px;
+}
+.bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px;
+    margin-bottom: 15px;
+    gap: 25px;
+}
+.bar .game1 {
+    background-color:black;
+    border-width: 3px;
+    border-style: solid;
+    border-color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 500px;
+    width: 400px;
+}
+.bar .game2 {
+    background-color:black;
+    border-width: 3px;
+    border-style: solid;
+    border-color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 500px;
+    width: 400px;
+}
+.bar .game3 {
+    background-color:black;
+    border-width: 3px;
+    border-style: solid;
+    border-color: white;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 500px;
+    width: 400px;
+}
+
+.hiddenDropdown{
+    display: none;
+}
+
+li  {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    list-style: none;
+}
+ul  {
+    position: fixed;
+    margin-left: -40px;
+}
+
+footer  {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+footer p {
+    font-weight: bold;
+    text-align: center;
+}

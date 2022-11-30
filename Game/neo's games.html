@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="FavGame-Neo.css">
+    <title>favoriete games van Neo</title>
+</head>
+<body>
+    
+    <header>
+
+        <img src="final charactar.png" alt="" style="margin-top:5px; margin-left:50px;" height="80px" width="80px">
+    
+        <nav>
+          <a href="x">Homepage</a>
+              
+          <div class="SearchMenu" onmouseleave="turnOn(false)" onmouseenter="turnOn(true)">
+            <a href="x" onmouseover="turnOn(true)">Portofolio's</a>
+            <ul id="myMenu" class="hiddenDropdown">
+              <li><a href="x">Metehan</a></li>
+              <li><a href="neo's portofolio.html">Neo</a></li>
+              <li><a href="x">Aiden</a></li>
+            </ul>
+          </div>
+          <a href="UitlegGame.html">Game Uitleg</a>
+          <a href="x">Game</a>
+          <a href="x"><button>Log in</button></a>
+        </nav>
+    
+      </header>
+
+    <h1>Mijn favoriete games</h1>
+
+    <div class="bar">
+        <div class="game1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo sapiente itaque officia tempore quidem 
+            possimus consectetur eveniet doloremque. Et reiciendis minus aliquid qui iure rerum expedita ipsum a impedit adipisci!
+
+            <img src="Sea-of-Thieves.jpg" height="250px" width="400px" alt="">
+        </div>
+        <div class="game2">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore ab maxime quibusdam minus vero doloribus 
+            maiores pariatur dolorem officia mollitia distinctio recusandae, qui alias quam cumque optio veniam nam voluptas.
+
+            <img src="Minecraft.jpg" height="250px" width="400px" alt="">
+        </div>
+        <div class="game3">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum veritatis, 
+            magnam optio ducimus dolore doloribus non accusamus doloremque quod accusantium beatae nesciunt 
+            tenetur minus adipisci. Excepturi quis debitis obcaecati blanditiis?
+
+            <img src="GTA-V.jpg" height="250px" width="400px" alt="">
+        </div>
+    </div>
+
+    <footer><p>Copyright MNA</p></footer>
+    
+    <script>
+      function turnOn(isOn) {
+        item = document.getElementById("myMenu");
+        if (isOn) {
+          item.classList.remove('hiddenDropdown')
+        } else {
+          item.classList.add("hiddenDropdown")
+        }
+      }
+    </script>
+
+</body>
+</html>
