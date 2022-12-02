@@ -1,20 +1,30 @@
-body{
-    margin: 0;
-    background-color: #101010;
+Body {
+    background-color:black;
+    color:white;
     font-family: 'Montserrat', sans-serif;
 }
-
-header{
+header  {
     display: flex;
     align-items: center;
     height: 80px;
 }
-
-nav{
+nav {
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    align-items: center;
+}
+a   {
+    
+    margin-right: 50px;
+    color: white;
+    gap: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+button  {
+    border-radius: 20px;
+    width: 100px;
+    height: 40px;
 }
 
 img{
@@ -26,14 +36,6 @@ img{
     margin-left: 50px;
 }
 
-a{
-    margin-right: 50px;
-    color: white;
-    gap: 10px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: large;
-}
 
 h1{
     color: white;
@@ -65,16 +67,6 @@ p{
     font-size: 18px;
 }
 
-button{
-    color: black;
-    border-radius: 20px;
-    height: 40px;
-    width: 100px;
-    margin-right: 20px;
-    font-family: 'Montserrat';
-    font-weight: bold;
-}
-
 .button-2{
     height: 50px;
     width: 150px;
@@ -99,7 +91,6 @@ footer p{
 
 .portfolio-flexcontainer{
     width: 40.5cm;
-    height: 580px;
     display: flex;
     align-items: flex-end;
 
@@ -129,4 +120,17 @@ footer p{
 
 img{
     border-radius: 3px;
+}
+
+li  {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    list-style: none;
+}
+ul  {
+    position: fixed;
+    margin-left: -40px;
+}
+.hiddenDropdown{
+    display: none;
 }

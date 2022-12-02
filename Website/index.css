@@ -1,34 +1,55 @@
-body{
-    margin: 0;
-    background-color: #101010;
+.hiddenDropdown {
+    display: none;
+}
+
+body {
+    background: black;
+    align-items: center;
+    min-height: 100vh;
+    color: white;
     font-family: 'Montserrat', sans-serif;
 }
 
-header{
+li {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    list-style: none;
+}
+
+ul {
+    position: fixed;
+    margin-left: -40px;
+}
+
+header {
     display: flex;
     align-items: center;
     height: 80px;
 }
 
-img{
-    margin-top: 25px;
-    margin-left: 50px;
-}
-
-nav{
+nav {
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    align-items: center;
 }
 
-a{
+a {
     margin-right: 50px;
     color: white;
     gap: 10px;
     text-decoration: none;
     font-weight: bold;
-    font-size: large;
+}
+
+button {
+    border-radius: 20px;
+    width: 100px;
+    height: 40px;
+}
+
+img{
+    margin-top: 25px;
+    margin-left: 50px;
 }
 
 h1{
@@ -48,17 +69,6 @@ p{
     justify-content: center;
     
 }
-
-button{
-    color: black;
-    border-radius: 20px;
-    height: 40px;
-    width: 100px;
-    margin-right: 20px;
-    font-family: 'Montserrat';
-    font-weight: bold;
-}
-
 
 footer{
     position: fixed;

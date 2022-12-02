@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Favoriete games</title>
-    <link rel="stylesheet" href="favoriete_games.css">
+    <link rel="stylesheet" href="FavGame-Metehan.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -19,7 +19,7 @@
         <img src="images/final charactar.png" alt="" style="margin-top:5px; margin-left:50px;" height="100px" width="100px">
     
         <nav>
-          <a href="x">Homepage</a>
+          <a href="index.html">Homepage</a>
               
           <div class="SearchMenu" onmouseleave="turnOn(false)" onmouseenter="turnOn(true)">
             <a href="x" onmouseover="turnOn(true)">Portofolio's</a>
@@ -31,10 +31,11 @@
           </div>
           <a href="UitlegGame.html">Game Uitleg</a>
           <a href="x">Game</a>
-          <a href="x"><button>Log in</button></a>
+          <a href="LogIn.html"><button>Log in</button></a>
         </nav>
     
       </header>
+
     <h1>Favoriete games</h1>
 
     <div class="flexcontainer-p">
@@ -89,11 +90,11 @@
                     LLC.</em>
                 <em>War Brokers</em> heeft vier verschillende game modes:
             </p>
-            <ul>
-                <li>Battle Royale</li>
-                <li>Classic 8v8</li>
-                <li>Speed 4v4</li>
-                <li>Death Match Royale</li>
+            <ul class="ul">
+                <li class="li">Battle Royale</li>
+                <li class="li">Classic 8v8</li>
+                <li class="li">Speed 4v4</li>
+                <li class="li">Death Match Royale</li>
             </ul>
             <p>Link naar War Brokers: <a href="https://warbrokers.io/signin.php">War Brokers</a>
             </p>
@@ -103,6 +104,19 @@
     <footer>
         <p> © Copyright MNA</p>
     </footer>
+
+    <script>
+
+        function turnOn(isOn) {
+            item = document.getElementById("myMenu");
+            if (isOn) {
+                item.classList.remove('hiddenDropdown')
+            } else {
+                item.classList.add("hiddenDropdown")
+            }
+        }
+    
+    </script>
 </body>
 
 </html>

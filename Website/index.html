@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepagee</title>
+    <title>Homepage</title>
     <link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +20,7 @@
         <img src="images/final charactar.png" alt="" style="margin-top:5px; margin-left:50px;" height="100px" width="100px">
     
         <nav>
-          <a href="x">Homepage</a>
+          <a href="index.html">Homepage</a>
               
           <div class="SearchMenu" onmouseleave="turnOn(false)" onmouseenter="turnOn(true)">
             <a href="x" onmouseover="turnOn(true)">Portofolio's</a>
@@ -32,7 +32,7 @@
           </div>
           <a href="UitlegGame.html">Game Uitleg</a>
           <a href="x">Game</a>
-          <a href="x"><button>Log in</button></a>
+          <a href="LogIn.html"><button>Log in</button></a>
         </nav>
     
       </header>
@@ -53,6 +53,18 @@
         <p> © Copyright MNA</p>
     </footer>
 
+    <script>
+
+      function turnOn(isOn) {
+          item = document.getElementById("myMenu");
+          if (isOn) {
+              item.classList.remove('hiddenDropdown')
+          } else {
+              item.classList.add("hiddenDropdown")
+          }
+      }
+  
+  </script>
 </body>
 
 </html>
