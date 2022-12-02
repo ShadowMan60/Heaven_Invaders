@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+<header>
+
+    <img src="images/p2%20logo.png" alt="" style="margin-top:5px; margin-left:50px;" height="80px" width="80px">
+
+    <nav>
+        <a href="x">Homepage</a>
+
+        <div class="SearchMenu" onmouseleave="turnOn(false)" onmouseenter="turnOn(true)">
+            <a href="x" onmouseover="turnOn(true)">Portofolio's</a>
+            <ul id="myMenu" class="hiddenDropdown">
+                <li><a href="x">Metehan</a></li>
+                <li><a href="x">Neo</a></li>
+                <li><a href="x">Aidan</a></li>
+            </ul>
+        </div>
+        <a href="UitlegGame.html">Game Uitleg</a>
+        <a href="x">Game</a>
+        <a href="x">
+            <button>Log in</button>
+        </a>
+    </nav>
+
+</header>
+
+<form>
+    <div class="login">
+        <img id="div_logo" src="images/p2%20logo.png" alt="">
+        <h1>Log in</h1>
+
+        <label for="email"><b>Email:</b></label>
+        <input type="text" placeholder="Email" name="email" id="email" required><br>
+
+        <label for="ww"><b>Wachtwoord:</b></label>
+        <input type="password" placeholder="Wachtwoord" name="ww" id="ww" required><br>
+
+        <button id="form_button" type="submit" class="register">Login</button>
+    </div>
+</form>
+
+<script>
+
+    function turnOn(isOn) {
+        item = document.getElementById("myMenu");
+        if (isOn) {
+            item.classList.remove('hiddenDropdown')
+        } else {
+            item.classList.add("hiddenDropdown")
+        }
+    }
+
+</script>
+
+</body>
+</html>

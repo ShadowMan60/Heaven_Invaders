@@ -1,0 +1,108 @@
+
+.hiddenDropdown {
+    display: none;
+}
+
+li {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    list-style: none;
+}
+
+ul {
+    position: fixed;
+    margin-left: -40px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    height: 80px;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+a {
+    margin-right: 50px;
+    color: white;
+    gap: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+button {
+    border-radius: 20px;
+    width: 100px;
+    height: 40px;
+}
+
+body {
+    background: black;
+    align-items: center;
+    min-height: 100vh;
+    color: white;
+}
+
+form {
+    width: 500px;
+    border: 2px solid white;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 100px;
+    margin-left: 40px;
+}
+
+.login {
+    text-align: center;
+}
+
+#div_logo {
+    display: flex;
+    width: 70px;
+    float: left;
+    margin-top: -50px;
+    margin-left: -30px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-right: 50px;
+}
+
+input {
+    display: block;
+    border: 2px solid black;
+    width: 95%;
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 20px;
+}
+
+label {
+    font-size: 16px;
+    padding: 10px;
+}
+
+#form_button {
+    border-radius: 20px;
+}
+
+button:hover {
+    opacity: .6;
+}
+
+
+
+
+
+
+
+
+
+
+
