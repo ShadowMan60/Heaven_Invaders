@@ -1,3 +1,6 @@
+body{
+    font-family: 'Montserrat';
+}
 
 .hiddenDropdown {
     display: none;
@@ -24,6 +27,7 @@ nav {
     width: 100%;
     display: flex;
     justify-content: flex-end;
+    
 }
 
 a {
@@ -32,6 +36,7 @@ a {
     gap: 10px;
     text-decoration: none;
     font-weight: bold;
+    font-size: 20px;
 }
 
 button {
@@ -58,7 +63,9 @@ form {
 }
 
 .login {
+
     text-align: center;
+
 }
 
 #div_logo {

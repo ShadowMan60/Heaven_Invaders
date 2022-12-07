@@ -1,63 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="LogIn.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="icon" type="images/x-icon" href="images/final charactar.png">
 </head>
+
 <body>
 
     <header>
 
-        <img src="images/final charactar.png" alt="" style="margin-top:5px; margin-left:50px;" height="100px" width="100px">
-    
+        <img src="images/final charactar.png" alt="" style="margin-top:5px; margin-left:50px;" height="100px"
+            width="100px">
+
         <nav>
-          <a href="index.html">Homepage</a>
-              
-          <div class="SearchMenu" onmouseleave="turnOn(false)" onmouseenter="turnOn(true)">
-            <a href="x" onmouseover="turnOn(true)">Portofolio's</a>
-            <ul id="myMenu" class="hiddenDropdown">
-              <li><a href="Metehan's portfolio.html">Metehan</a></li>
-              <li><a href="neo's portofolio.html">Neo</a></li>
-              <li><a href="x">Aiden</a></li>
-            </ul>
-          </div>
-          <a href="UitlegGame.html">Game Uitleg</a>
-          <a href="x">Game</a>
-          <a href="LogIn.html"><button>Log in</button></a>
+            <a href="index.html">Homepage</a>
+
+            <div class="SearchMenu" onmouseleave="turnOn(false)" onmouseenter="turnOn(true)">
+                <a href="x" onmouseover="turnOn(true)">Portofolio's</a>
+                <ul id="myMenu" class="hiddenDropdown">
+                    <li><a href="Metehan's portfolio.html">Metehan</a></li>
+                    <li><a href="neo's portofolio.html">Neo</a></li>
+                    <li><a href="x">Aiden</a></li>
+                </ul>
+            </div>
+            <a href="UitlegGame.html">Game Uitleg</a>
+            <a href="x">Game</a>
+            <a href="LogIn.html"><button>Log in</button></a>
         </nav>
-    
-      </header>
 
-<form>
-    <div class="login">
-        <img id="div_logo" src="images/final charactar.png" alt="">
-        <h1>Log in</h1>
+    </header>
 
-        <label for="email"><b>Email:</b></label>
-        <input type="text" placeholder="Email" name="email" id="email" required><br>
+    <form>
+        <div class="login">
+            <img id="div_logo" src="images/final charactar.png" alt="">
+            <h1>Log in</h1>
 
-        <label for="ww"><b>Wachtwoord:</b></label>
-        <input type="password" placeholder="Wachtwoord" name="ww" id="ww" required><br>
+            <label for="email"><b>Email:</b></label>
+            <input type="text" placeholder="Email" name="email" id="email" required><br>
 
-        <button id="form_button" type="submit" class="register">Login</button>
-    </div>
-</form>
+            <label for="ww"><b>Wachtwoord:</b></label>
+            <input type="password" placeholder="Wachtwoord" name="ww" id="ww" required><br>
 
-<script>
+            <button id="form_button" type="submit" class="register">Login</button>
+        </div>
+    </form>
 
-    function turnOn(isOn) {
-        item = document.getElementById("myMenu");
-        if (isOn) {
-            item.classList.remove('hiddenDropdown')
-        } else {
-            item.classList.add("hiddenDropdown")
+    <script>
+
+        function turnOn(isOn) {
+            item = document.getElementById("myMenu");
+            if (isOn) {
+                item.classList.remove('hiddenDropdown')
+            } else {
+                item.classList.add("hiddenDropdown")
+            }
         }
-    }
 
-</script>
+    </script>
 
 </body>
+
 </html>
