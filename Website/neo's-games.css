@@ -1,43 +1,61 @@
-Body {
-    background-color:black;
-    color:white;
-    font-family: 'Montserrat', sans-serif;
+body{
+    margin: 0;
+    background-color: #101010;
+    font-family: 'Montserrat';
 }
-header  {
+
+header{
     display: flex;
     height: 80px;
 }
-nav {
+
+nav{
     width: 100%;
     display: flex;
     justify-content: flex-end;
     margin-top: 30px;
 }
-a   {
-    
+
+.img1{
+    margin-left: 50px;
+}
+
+a{
     margin-right: 50px;
     color: white;
     gap: 10px;
     text-decoration: none;
     font-weight: bold;
-}
-.button {
-    margin-top: -10px;
-}
-button {
-    border-radius: 20px;
-    width: 100px;
-    height: 40px;
+    font-size: 20px;
+    
 }
 
-h1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 35px;
-    margin: 15px;
+button{
+    color: #101010;
+    border-radius: 20px;
+    height: 40px;
+    width: 100px;
+    margin-right: 20px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: -10px;
 }
-.bar {
+
+button:hover{
+    background-color: #BEBEBE;
+}
+
+h1{
+    color: white;
+    text-align: center;
+}
+
+p{
+    color: white;
+}
+
+.bar{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,11 +63,13 @@ h1 {
     margin-bottom: 15px;
     gap: 25px;
 }
+
 .bar .game1 {
-    background-color:black;
-    border-width: 3px;
+    border: 3px;
+    border-radius: 5px;
     border-style: solid;
     border-color: white;
+    padding: 5px;
 
     display: flex;
     flex-direction: column;
@@ -58,11 +78,13 @@ h1 {
     height: 500px;
     width: 400px;
 }
+
 .bar .game2 {
-    background-color:black;
-    border-width: 3px;
+    border: 3px;
+    border-radius: 5px;
     border-style: solid;
     border-color: white;
+    padding: 5px;
 
     display: flex;
     flex-direction: column;
@@ -71,11 +93,13 @@ h1 {
     height: 500px;
     width: 400px;
 }
+
 .bar .game3 {
-    background-color:black;
-    border-width: 3px;
+    border: 3px;
+    border-radius: 5px;
     border-style: solid;
     border-color: white;
+    padding: 5px;
     
     display: flex;
     flex-direction: column;
@@ -89,22 +113,23 @@ h1 {
     display: none;
 }
 
-li  {
+li{
     margin-top: 5px;
     margin-bottom: 5px;
     list-style: none;
+    background-color: #101010;
 }
-ul  {
+ul{
     position: fixed;
     margin-left: -40px;
 }
 
-footer  {
+footer{
     position: fixed;
     bottom: 0;
     width: 100%;
 }
-footer p {
+footer p{
     font-weight: bold;
     text-align: center;
 }

@@ -6,7 +6,7 @@
     <title>Login</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="LogIn.css">
+    <link rel="stylesheet" href="login.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -17,41 +17,43 @@
 
     <header>
 
-        <img src="images/final charactar.png" alt="" style="margin-top:5px; margin-left:50px;" height="100px"
-            width="100px">
+        <a href="mn-index.html"><img class="img1" src="images/final charactar.png" alt="" height="100px"
+                width="100px"></a>
 
         <nav>
-            <a href="index.html">Homepage</a>
+            <a href="mn-index.html">Homepage</a>
 
             <div class="SearchMenu" onmouseleave="turnOn(false)" onmouseenter="turnOn(true)">
                 <a href="x" onmouseover="turnOn(true)">Portofolio's</a>
                 <ul id="myMenu" class="hiddenDropdown">
-                    <li><a href="Metehan's portfolio.html">Metehan</a></li>
-                    <li><a href="neo's portofolio.html">Neo</a></li>
+                    <li><a href="mn-portfolio.html">Metehan</a></li>
+                    <li><a href="neo's-portofolio.html">Neo</a></li>
                     <li><a href="x">Aiden</a></li>
                 </ul>
             </div>
             <a href="UitlegGame.html">Game Uitleg</a>
             <a href="x">Game</a>
-            <a class="button" href="LogIn.html"><button>Log in</button></a>
+            <a class="button-nav" href="login.html"><button>Log in</button></a>
         </nav>
 
     </header>
 
-    <form>
-        <div class="login">
-            <img id="div_logo" src="images/final charactar.png" alt="">
-            <h1>Log in</h1>
+    <div class="form-flexcontainer">
+        <form>
+            <div class="login">
+                <img class="div_logo" src="images/final charactar.png" alt="">
+                <h1>Log in</h1>
 
-            <label for="email"><b>Email:</b></label>
-            <input type="text" placeholder="Email" name="email" id="email" required><br>
+                <label for="email"><b>Email:</b></label>
+                <input type="text" placeholder="Email" name="email" id="email" required><br>
 
-            <label for="ww"><b>Wachtwoord:</b></label>
-            <input type="password" placeholder="Wachtwoord" name="ww" id="ww" required><br>
+                <label for="ww"><b>Wachtwoord:</b></label>
+                <input type="password" placeholder="Wachtwoord" name="ww" id="ww" required><br>
 
-            <button id="form_button" type="submit" class="register">Login</button>
-        </div>
-    </form>
+                <button class="form-button" type="submit" class="register">Login</button>
+            </div>
+        </form>
+    </div>
 
     <script>
 

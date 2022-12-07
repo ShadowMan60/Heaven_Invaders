@@ -1,6 +1,6 @@
-body{margin: 0;
+body{
+    margin: 0;
     background-color: #101010;
-    color:white;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -41,20 +41,31 @@ button{
     margin-top: -10px;
 }
 
+.fg-button{
+    width: 150px;
+    height: 50px;
+    font-size: 14px;
+}
+
 button:hover{
     background-color: #BEBEBE;
 }
 
-h1{
+h1{color: white;
     text-align: center;
-    margin: 15px;
 }
+
+p{
+    color: white;
+}
+
+
 
 .upper-bar  {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 15px;
+    /* margin: 15px; */
     gap: 15px;
 }
 .lower-bar  {
@@ -65,44 +76,54 @@ h1{
     gap: 15px;
 }
 .upper-bar .txt1    {
-    background-color:#101010;
-    border-width: 3px;
+    border: 3px;
     border-style: solid;
     border-color: white;
-    font-weight: bold;
+    border-radius: 5px;
+    padding: 5px;
 
     height: 230px;
     width: 740px;
 }
 .upper-bar .txt2    {
-    background-color:#101010;;
-    border-width: 3px;
+    border: 3px;
     border-style: solid;
     border-color: white;
-    font-weight: bold;
+    border-radius: 5px;
+    padding: 5px;
 
     height: 230px;
     width: 660px;
 }
 .lower-bar .txt3    {
-    background-color:#101010;;
-    border-width: 3px;
+    border: 3px;
     border-style: solid;
     border-color: white;
-    font-weight: bold;
+    border-radius: 5px;
+    padding: 5px;
 
     height: 230px;
     width: 1000px;
+}
+
+.img-txt3{
+    border: 3px;
+    border-color: white;
+    border-style: solid;
+    border-radius: 5px;
+    height: 230px;
+    width: 400px;
 }
 
 .hiddenDropdown{
     display: none;
 }
 
-li  {
+li{
     margin-top: 5px;
     margin-bottom: 5px;
     list-style: none;
+    background-color: #101010;
 }
 ul  {
     position: fixed;

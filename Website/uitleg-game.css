@@ -1,53 +1,68 @@
-body    {
-    background-color: black;
+body{
+    margin: 0;
+    background-color: #101010;
     color: white;
     font-family: 'Montserrat', sans-serif;
 }
 
-header  {
+header{
     display: flex;
     height: 80px;
 }
-nav {
+
+nav{
     width: 100%;
     display: flex;
     justify-content: flex-end;
     margin-top: 30px;
 }
-a   {
+.img1{
+    margin-left: 50px;
+}
+
+a{
     margin-right: 50px;
     color: white;
     gap: 10px;
     text-decoration: none;
     font-weight: bold;
+    font-size: 20px;
 }
-.button {
+p{
+    font-weight: bold;
+}
+
+button{
+    color: #101010;
+    border-radius: 20px;
+    height: 40px;
+    width: 100px;
+    margin-right: 20px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 15px;
     margin-top: -10px;
 }
-button {
-    border-radius: 20px;
-    width: 100px;
-    height: 40px;
+
+button:hover{
+    background-color: #BEBEBE;
 }
 
-h1  {
+h1{
+    text-align: center;
+}
+
+.box{
     display: flex;
     justify-content: center;
 }
 
-.box    {
-    display: flex;
-    justify-content: center;
-    background-color:black;
-    
-}
-
-.txt    {
+.txt{
     display: flex;
     justify-content: center;
     width: 80%;
-    border-width: 3px;
-    border-style: solid;
+    /* border-width: 3px;
+    border-style: solid; */
     border-color: white;
 }
 
@@ -55,22 +70,25 @@ h1  {
     display: none;
 }
 
-li  {
+li{
     margin-top: 5px;
     margin-bottom: 5px;
     list-style: none;
+    background-color: #101010;
 }
-ul  {
+
+ul{
     position: fixed;
     margin-left: -40px;
 }
 
-footer  {
+footer{
     position: fixed;
     bottom: 0;
     width: 100%;
 }
-footer p {
+
+footer p{
     font-weight: bold;
     text-align: center;
 }
