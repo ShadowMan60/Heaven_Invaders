@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Favoriete Games Aidan</title>
+    <link rel="stylesheet" href="FavGame-Aidan.css">
+</head>
+<body>
+
+<header>
+
+    <img src="images/final%20charactar.png" alt="" style="margin-top:5px; margin-left:50px;" height="80px" width="80px">
+
+    <nav>
+        <a href="x">Homepage</a>
+
+        <div class="SearchMenu" onmouseleave="turnOn(false)" onmouseenter="turnOn(true)">
+            <a href="x" onmouseover="turnOn(true)">Portofolio's</a>
+            <ul id="myMenu" class="hiddenDropdown">
+                <li><a href="x">Metehan</a></li>
+                <li><a href="x">Neo</a></li>
+                <li><a href="x">Aidan</a></li>
+            </ul>
+        </div>
+        <a href="UitlegGame.html">Game Uitleg</a>
+        <a href="x">Game</a>
+        <a href="x">
+            <button>Log in</button>
+        </a>
+    </nav>
+</header>
+
+<h1>Mijn favoriete games</h1>
+
+<div id="container">
+
+
+    <div id="vak-1">
+        <img src="images/COD%20logo.jpg" alt="">
+
+        <h2>Call of Duty</h2>
+
+        <p>Call of Duty is al een lange tijd een van mij favoriete games, ik vindt het vooral een
+        leuk spel omdat je allemaal verschillende gamemodes en loadouts hebt waardoor het eigenlijk
+        nooit saai wordt. Ook heb je campaign, zombies en warzone, bij campaign wordt je als het ware
+        door een verhaallijn geleid en speel je als een of meerdere personages. Bij zombies is het eigelijk
+        gewoon prroberen tot een zo ver mogelijke ronde proberen te komen en warzone is een battle royale
+        game mode.</p>
+    </div>
+
+    <div id="vak-2">
+        <img src="images/Elden%20Ring%20logo.jpg" alt="">
+
+        <h2>Elden Ring</h2>
+
+        <p>Elden Ring staat ook in mijn top 3 omdat het echt een enorm mooi en groot spel is. Ik vindt
+        het vooral een leuk spel omdat het niet het makkelijkste spel is dus je moet echt de moves van
+        je tegenstanders gaan onthouden en weten wanneer je kunt aanvallen. Dit spel wordt ook nooit saai
+        door de grote hoeveelheid aan verschillende wapens en spreuken, dus als je even geen zin hebt in
+        tovenarij dan pak je gewoon een zwaard, knuppel, speer, enzovoorts. </p>
+    </div>
+
+    <div id="vak-3">
+        <img src="images/LOL%20logo.jpg" alt="">
+
+        <h2>League of Legends</h2>
+
+        <p>League of Legends is sinds kort een van mijn favoriete spellen omdat het een rustig spel is en dat
+        is ook wel eens fijn als je niet zo'n zin hebt in alleen maar actie. Het spel heeft meer dan 140
+        karakter dus er is voor iedereen wel een character die je leuk vindt. Het is een 5 tegen 5 game en elke speler
+        heeft zijn eigen rol in een game. De rollen zijn: Tank, Jungler, APC, ADC en Support.</p>
+    </div>
+
+</div>
+
+<script>
+    function turnOn(isOn) {
+        item = document.getElementById("myMenu");
+        if (isOn) {
+            item.classList.remove('hiddenDropdown')
+        } else {
+            item.classList.add("hiddenDropdown")
+        }
+    }
+</script>
+
+</body>
+</html>
