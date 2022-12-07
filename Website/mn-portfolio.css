@@ -6,7 +6,6 @@ body{
 
 header{
     display: flex;
-    align-items: center;
     height: 80px;
 }
 
@@ -14,7 +13,7 @@ nav{
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    align-items: center;
+    margin-top: 30px;
 }
 
 img{
@@ -22,7 +21,6 @@ img{
 }
 
 .img1{
-    margin-top: 25px;
     margin-left: 50px;
 }
 
@@ -32,7 +30,7 @@ a{
     gap: 10px;
     text-decoration: none;
     font-weight: bold;
-    font-size: large;
+    font-size: 20px;
 }
 
 h1{
@@ -74,6 +72,7 @@ button{
     font-family: 'Montserrat';
     font-weight: bold;
     font-size: 15px;
+    margin-top: -10px;
 }
 
 button:hover{
@@ -89,6 +88,7 @@ button:hover{
     margin-left: 20px;
     font-family: 'Montserrat';
     font-size: 14px;
+    margin-top: 10px;
 }
 
 footer{
@@ -135,4 +135,20 @@ footer p{
 
 img{
     border-radius: 3px;
+}
+
+.hiddenDropdown{
+    display: none;
+}
+
+li  {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    list-style: none;
+    gap: 10px;
+}
+
+ul{
+    position: fixed;
+    margin-left: -40px;
 }

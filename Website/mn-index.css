@@ -1,40 +1,43 @@
-body    {
-    background-color: black;
-    color: white;
+body{
+    margin: 0;
+    background-color: #101010;
     font-family: 'Montserrat', sans-serif;
 }
 
-header  {
+header{
     display: flex;
-    align-items: center;
     height: 80px;
 }
-nav {
+
+img{
+    margin-left: 50px;
+}
+
+nav{
     width: 100%;
     display: flex;
     justify-content: flex-end;
+    margin-top: 30px;
 }
-a   {
+
+a{
     margin-right: 50px;
     color: white;
     gap: 10px;
     text-decoration: none;
     font-weight: bold;
-}
-
-img{
-    margin-top: 25px;
-    margin-left: 50px;
+    font-size: 20px;
+    
 }
 
 h1{
     color: white;
     font-size: 3em;
 }
+
 p{
     color: white;
 }
-
 
 .flexcontainer{
     width: 100%;
@@ -46,7 +49,7 @@ p{
 }
 
 button{
-    color: black;
+    color: #101010;
     border-radius: 20px;
     height: 40px;
     width: 100px;
@@ -54,10 +57,11 @@ button{
     font-family: 'Montserrat';
     font-weight: bold;
     font-size: 15px;
+    margin-top: -10px;
 }
 
 button:hover{
-    background-color: #C0C0C0;
+    background-color: #BEBEBE;
 }
 
 footer{
@@ -83,15 +87,14 @@ footer p{
 }
 
 li  {
-    margin-top: 5px;
+    margin-top: 10px;
     margin-bottom: 5px;
     list-style: none;
+    gap: 10px;
 }
-ul  {
+
+ul{
     position: fixed;
     margin-left: -40px;
 }
 
-.button {
-    margin-top: -10px;
-}

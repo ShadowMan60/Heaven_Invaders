@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Favoriete games</title>
-    <link rel="stylesheet" href="favoriete_games.css">
+    <link rel="stylesheet" href="mn-favoriete_games.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -15,16 +15,27 @@
 
 <body>
     <header>
-        <a href="index.html"> <img class="img1" src="images/final charactar.png" alt="" height="100px"
-                width="100px"></a>
+
+        <img class="img1" src="images/final charactar.png" alt="" height="100px" width="100px">
+
         <nav>
-            <a class="a-nav" href="index.html">Homepage</a>
-            <a class="a-nav" href="portfolio.html">Portfolio's</a>
-            <a class="a-nav" href="x">Game Uitleg</a>
-            <a class="a-nav" href="x">Game</a>
-            <a class="a-nav" href="https://pixeljoint.com/pixelart/131695.htm"><button>Log in</button></a>
+            <a href="x">Homepage</a>
+
+            <div class="SearchMenu" onmouseleave="turnOn(false)" onmouseenter="turnOn(true)">
+                <a href="x" onmouseover="turnOn(true)">Portofolio's</a>
+                <ul id="myMenu" class="hiddenDropdown">
+                    <li><a href="x">Metehan</a></li>
+                    <li><a href="neo's portofolio.html">Neo</a></li>
+                    <li><a href="x">Aiden</a></li>
+                </ul>
+            </div>
+            <a href="UitlegGame.html">Game Uitleg</a>
+            <a href="x">Game</a>
+            <a class="button" href="x"><button>Log in</button></a>
         </nav>
+
     </header>
+
     <h1>Favoriete games</h1>
 
     <div class="flexcontainer-p">
@@ -81,12 +92,12 @@
                 War Brokers heeft vier game modes:
             </p>
 
-            <ul>
-                <li>Battle Royale</li>
-                <li>Classic 8v8</li>
-                <li>Speed 4v4</li>
-                <li>Death Match Royale</li>
-            </ul>
+            <!-- <ul>
+                <li class="li2">Battle Royale</li>
+                <li class="li2">Classic 8v8</li>
+                <li class="li2">Speed 4v4</li>
+                <li class="li2">Death Match Royale</li>
+            </ul> -->
 
             <p> Link naar War Brokers: <a class="a-warbrokers" href="https://warbrokers.io/signin.php"
                     target="_blank">War
@@ -98,6 +109,17 @@
     <footer>
         <p> © Copyright MNA</p>
     </footer>
+
+    <script>
+        function turnOn(isOn) {
+            item = document.getElementById("myMenu");
+            if (isOn) {
+                item.classList.remove('hiddenDropdown')
+            } else {
+                item.classList.add("hiddenDropdown")
+            }
+        }
+    </script>
 </body>
 
 </html>

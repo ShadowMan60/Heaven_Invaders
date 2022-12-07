@@ -1,27 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="neo-portofolio.css"/>
-    <title>Portofolio Neo</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="neo-portofolio.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="icon" type="images/x-icon" href="images/final charactar.png">
+  <title>Neo's Portfolio</title>
 </head>
+
 <body>
 
   <header>
 
-    <img src="images/final charactar.png" alt="" height="100px" width="100px">
+    <img class="img1" src="images/final charactar.png" alt="" height="100px" width="100px">
 
     <nav>
       <a href="index.html">Homepage</a>
-          
+
       <div class="SearchMenu" onmouseleave="turnOn(false)" onmouseenter="turnOn(true)">
         <a href="x" onmouseover="turnOn(true)">Portofolio's</a>
         <ul id="myMenu" class="hiddenDropdown">
-          <li><a href="Metehan's portfolio.html">Metehan</a></li>
+          <li><a href="mn-portfolio.html">Metehan</a></li>
           <li><a href="neo's portofolio.html">Neo</a></li>
           <li><a href="x">Aiden</a></li>
         </ul>
@@ -33,9 +37,8 @@
 
   </header>
 
-  </header>
 
-  <h1>Portofolio</h1>
+  <h1>Portfolio</h1>
 
   <div class="upper-bar">
     <div class="txt1">
@@ -49,30 +52,35 @@
       libero voluptatem omnis totam eveniet nostrum accusantium sit ratione cumque soluta quos neque?
     </div>
   </div>
-    
+
   <div class="lower-bar">
     <div class="txt3">
       Lorem ipsum dolor sit amet consectetur adipisicing elit.
       Culpa est laboriosam voluptates voluptas quidem velit. Possimus,
-      laboriosam commodi? Fugit quod consequuntur blanditiis tenetur animi ipsum ullam necessitatibus suscipit fuga illo?
+      laboriosam commodi? Fugit quod consequuntur blanditiis tenetur animi ipsum ullam necessitatibus suscipit fuga
+      illo?
       <a href="neo's games.html" class="FG">mijn favoriete games</a>
     </div>
-    
-    <img src="images/temp.jpg" height="230px" width="400px" style="border-width: 3px; border-style: solid; border-color: white;" alt="">
+
+    <img src="images/temp.jpg" height="230px" width="400px"
+      style="border-width: 3px; border-style: solid; border-color: white;" alt="">
   </div>
 
-  <footer><p>Copyright MNA</p></footer>
-    
-<script>
-  function turnOn(isOn) {
-    item = document.getElementById("myMenu");
-    if (isOn) {
-      item.classList.remove('hiddenDropdown')
-    } else {
-      item.classList.add("hiddenDropdown")
+  <footer>
+    <p> © Copyright MNA </p>
+  </footer>
+
+  <script>
+    function turnOn(isOn) {
+      item = document.getElementById("myMenu");
+      if (isOn) {
+        item.classList.remove('hiddenDropdown')
+      } else {
+        item.classList.add("hiddenDropdown")
+      }
     }
-  }
-</script>
+  </script>
 
 </body>
+
 </html>
