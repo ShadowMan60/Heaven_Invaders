@@ -71,16 +71,17 @@ h1{
 }
 
 li{
-    margin-top: 5px;
+    margin-top: 10px;
     margin-bottom: 5px;
     list-style: none;
-    background-color: #101010;
+    gap: 10px;
 }
 
 ul{
     position: fixed;
     margin-left: -40px;
 }
+
 
 footer{
     position: fixed;
