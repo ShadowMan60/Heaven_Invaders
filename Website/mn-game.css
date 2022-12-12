@@ -1,0 +1,90 @@
+body{
+    margin: 0;
+    color: white;
+    background-color: #101010;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    display: flex;
+    height: 80px;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+}
+
+.img1{
+    margin-left: 50px;
+}
+
+a{
+    margin-right: 50px;
+    color: white;
+    gap: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+button{
+    color: black;
+    border-radius: 20px;
+    height: 40px;
+    width: 100px;
+    margin-right: 20px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: -10px;
+}
+
+
+button:hover{
+    background-color: #BEBEBE;
+}
+
+.flexcontainer-1{
+    text-align: center;
+    width: 40,4em;
+}
+
+.hiddenDropdown{
+    display: none;
+}
+
+li{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    list-style: none;
+    gap: 10px;
+}
+
+ul{
+    position: fixed;
+    margin-left: -40px;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
