@@ -15,74 +15,73 @@
 
 <body>
 
-<header>
+    <header>
 
-    <a href="mn-index.html"><img class="img1" src="images/final-character.png" alt="" height="100px"
-                                 width="100px"></a>
+        <a href="mn-index.html"><img class="img1" src="images/final_character.png" alt=""></a>
 
-    <nav>
-        <a href="mn-index.html">Homepage</a>
+        <nav>
+            <a href="mn-index.html">Homepage</a>
 
-        <div class="SearchMenu" onmouseleave="turnOn(false)" onmouseenter="turnOn(true)">
-            <a href="x" onmouseover="turnOn(true)">Portofolio's</a>
-            <ul id="myMenu" class="hiddenDropdown">
-                <li><a href="mn-portfolio.html">Metehan</a></li>
-                <li><a href="neo's-portfolio.html">Neo</a></li>
-                <li><a href="x">Aidan</a></li>
-            </ul>
+            <div class="SearchMenu" onmouseleave="turnOn(false)" onmouseenter="turnOn(true)">
+                <a href="x" onmouseover="turnOn(true)">Portofolio's</a>
+                <ul id="myMenu" class="hiddenDropdown">
+                    <li><a href="mn-portfolio.html">Metehan</a></li>
+                    <li><a href="neos-portfolio.html">Neo</a></li>
+                    <li><a href="Aidan-portofolio.html">Aidan</a></li>
+                </ul>
+            </div>
+            <a href="uitleg-game.html">Game Uitleg</a>
+            <a href="mn-game.html">Game</a>
+            <button class="button1" onclick="window.location.href='LogIn.html';">Log in</button>
+        </nav>
+
+    </header>
+
+    <h1>Portofolio</h1>
+
+
+    <div class="flexcontainer">
+
+        <div>
+
+            <p id="p1">
+                Hallo ik ben Aidan de Groot
+
+            </p>
+
+            <p id="p2">
+                Ik ben 17 jaar oud, mijn hobby's zijn voetballen en gamen.
+                Ik woon in Krimpen a/d Lek en ik zit op school op het "Techniek College Rotterdam"
+                op de opleiding "Software Developer". Ik woon nog bij mijn ouders, ze zijn gehuwd en ik heb 3 zussen
+                en geen huisdieren.
+            </p>
+
+            <p>
+                Om nog wat verder op een van mijn hobby's "gamen" in te gaan kunt u met de knop hieronder
+                kunt u mijn 3 favorieten games bekijken.
+            </p>
+
+            <button class="button2" onclick="window.location.href='FavGame-Aidan.html';">Favoriete games</button>
         </div>
-        <a href="uitleg-game.html">Game Uitleg</a>
-        <a href="mn-game.html">Game</a>
-        <a class="button-nav" href="login.html"><button>Log in</button></a>
-    </nav>
 
-</header>
-
-<h1>Portofolio</h1>
+        <div><img class="ikzelf" src="images/ik.jpg" alt="foto van mijzelf"></div>
 
 
-<div class="flexcontainer">
-    
-    <div>
 
-        <p id="p1">
-            Hallo ik ben Aidan de Groot
-
-        </p>
-
-        <p id="p2">
-            Ik ben 17 jaar oud, mijn hobby's zijn voetballen en gamen.
-            Ik woon in Krimpen a/d Lek en ik zit op school op het "Techniek College Rotterdam"
-            op de opleiding "Software Developer". Ik woon nog bij mijn ouders, ze zijn gehuwd en ik heb 3 zussen
-            en geen huisdieren.
-        </p>
-
-        <p>
-            Om nog wat verder op een van mijn hobby's "gamen" in te gaan kunt u met de knop hieronder
-            kunt u mijn 3 favorieten games bekijken.
-        </p>
-
-        <a href="FavGame-Aidan.html" ><button class="button">Favorieten games</button></a>
     </div>
-    
-    <div><img class="ikzelf" src="images/ik.jpg" alt="foto van mijzelf"></div>
 
+    <script>
 
-
-</div>
-
-<script>
-
-    function turnOn(isOn) {
-        item = document.getElementById("myMenu");
-        if (isOn) {
-            item.classList.remove('hiddenDropdown')
-        } else {
-            item.classList.add("hiddenDropdown")
+        function turnOn(isOn) {
+            item = document.getElementById("myMenu");
+            if (isOn) {
+                item.classList.remove('hiddenDropdown')
+            } else {
+                item.classList.add("hiddenDropdown")
+            }
         }
-    }
 
-</script>
+    </script>
 
 </body>
 

@@ -1,7 +1,7 @@
 body{
     margin: 0;
     color: white;
-    background-color: #101010;
+    background-color: #181818;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -19,6 +19,8 @@ nav{
 
 .img1{
     margin-left: 50px;
+    height: 100px;
+    width: 100px;
 }
 
 a{
@@ -30,8 +32,8 @@ a{
     font-size: 20px;
 }
 
-button{
-    color: black;
+.button1{
+    color: #181818;
     border-radius: 20px;
     height: 40px;
     width: 100px;
@@ -42,13 +44,19 @@ button{
     margin-top: -10px;
 }
 
-.form-button{
-    margin-left: 20px;
-    text-align: center;
-}
-
 button:hover{
     background-color: #BEBEBE;
+}
+
+.button2{
+    height: 50px;
+    width: 150px;
+    border-radius: 75px;
+    font-weight: bold;
+    margin-left: 20px;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    margin-top: 10px;
 }
 
 .hiddenDropdown{
@@ -87,11 +95,12 @@ h1 {
 }
 
 #p1 {
-    font-size: 25px;
+    font-size: xx-large;
+
 }
 
 #p2 {
-    font-size: 17px;
+    font-size: larger;
 }
 
 .button {
