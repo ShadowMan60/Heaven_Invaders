@@ -1,0 +1,222 @@
+<<<<<<< HEAD:Website/FavGame-Neo.css
+Body {
+    background-color: black;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+=======
+body{
+    margin: 0;
+    background-color: #181818;
+    font-family: 'Montserrat';
+}
+
+header{
+>>>>>>> master:Website/neo's-games.css
+    display: flex;
+    height: 80px;
+}
+
+<<<<<<< HEAD:Website/FavGame-Neo.css
+nav {
+=======
+nav{
+>>>>>>> master:Website/neo's-games.css
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+}
+
+<<<<<<< HEAD:Website/FavGame-Neo.css
+a {
+=======
+.img1{
+    margin-left: 50px;
+    height: 100px;
+    width: 100px;
+}
+
+.img_sot{
+    height: 250px;
+    width: 400px;
+}
+
+.img_mine{
+    height: 250px;
+    width: 400px;
+}
+
+.img_gta{
+    height: 250px;
+    width: 400px;
+}
+
+a{
+>>>>>>> master:Website/neo's-games.css
+    margin-right: 50px;
+    color: white;
+    gap: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+
+<<<<<<< HEAD:Website/FavGame-Neo.css
+button {
+=======
+button{
+    color: #101010;
+>>>>>>> master:Website/neo's-games.css
+    border-radius: 20px;
+    height: 40px;
+    width: 100px;
+    margin-right: 20px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: -10px;
+}
+
+button:hover{
+    background-color: #BEBEBE;
+}
+
+<<<<<<< HEAD:Website/FavGame-Neo.css
+.bar {
+=======
+h1{
+    color: white;
+    text-align: center;
+}
+
+p{
+    color: white;
+}
+
+.bar{
+>>>>>>> master:Website/neo's-games.css
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px;
+    margin-bottom: 15px;
+    gap: 25px;
+}
+
+.bar .game1 {
+<<<<<<< HEAD:Website/FavGame-Neo.css
+    background-color: black;
+    border-width: 3px;
+=======
+    border: 3px;
+    border-radius: 5px;
+>>>>>>> master:Website/neo's-games.css
+    border-style: solid;
+    border-color: white;
+    padding: 5px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 500px;
+    width: 400px;
+}
+
+.bar .game2 {
+<<<<<<< HEAD:Website/FavGame-Neo.css
+    background-color: black;
+    border-width: 3px;
+=======
+    border: 3px;
+    border-radius: 5px;
+>>>>>>> master:Website/neo's-games.css
+    border-style: solid;
+    border-color: white;
+    padding: 5px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 500px;
+    width: 400px;
+}
+
+.bar .game3 {
+<<<<<<< HEAD:Website/FavGame-Neo.css
+    background-color: black;
+    border-width: 3px;
+    border-style: solid;
+    border-color: white;
+
+=======
+    border: 3px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: white;
+    padding: 5px;
+    
+>>>>>>> master:Website/neo's-games.css
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 500px;
+    width: 400px;
+}
+
+.hiddenDropdown {
+    display: none;
+}
+
+<<<<<<< HEAD:Website/FavGame-Neo.css
+li {
+=======
+li{
+>>>>>>> master:Website/neo's-games.css
+    margin-top: 5px;
+    margin-bottom: 5px;
+    list-style: none;
+    background-color: #181818;
+}
+<<<<<<< HEAD:Website/neo's-games.css
+<<<<<<< HEAD:Website/FavGame-Neo.css
+
+ul {
+=======
+=======
+
+>>>>>>> master:Website/neos-games.css
+ul{
+>>>>>>> master:Website/neo's-games.css
+    position: fixed;
+    margin-left: -40px;
+}
+
+<<<<<<< HEAD:Website/FavGame-Neo.css
+footer {
+=======
+footer{
+>>>>>>> master:Website/neo's-games.css
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+<<<<<<< HEAD:Website/neo's-games.css
+<<<<<<< HEAD:Website/FavGame-Neo.css
+
+footer p {
+=======
+=======
+
+>>>>>>> master:Website/neos-games.css
+footer p{
+>>>>>>> master:Website/neo's-games.css
+    font-weight: bold;
+    text-align: center;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="icon" type="images/x-icon" href="images/final charactar.png">
+    <style>
+        .navigation {
+            display: flex;
+            position: relative;
+        }
+
+        .drop-down-menu {
+            display: none;
+            position: absolute;
+
+        }
+
+        .drop-down-link:hover .drop-down-menu {
+            display: flex;
+            flex-direction: column;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <a href="index.html"> <img class="img1" src="images/final charactar.png" alt="" height="100px"
+                width="100px"></a>
+        <nav>
+            <ul class="navigation">
+                <li>
+                    <a href="index.html">Homepage</a>
+                </li>
+                <li class="drop-down-link">
+                    <a href="portfolio.html" class="drop-down-link">Portfolio's</a>
+                    <ul class="drop-down-menu">
+                        <li><a href="#">Metehan</a></li>
+                        <li><a href="#">Neo</a></li>
+                        <li><a href="#">Aiden</a></li>
+
+                    </ul>
+                </li>
+                <li>
+                    <a href="favoriete_games.html">Game Uitleg</a>
+                </li>
+                <li>
+                    <a href="x">Game</a>
+                </li>
+                <li>
+                    <a href="https://pixeljoint.com/pixelart/131695.htm"><button>Log in</button></a>
+
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="flexcontainer">
+        <div class="flex-child">
+            <h1>Welkom op onze website</h1>
+            <p>Hallo allemaal en welkom op onze website.
+                Voor een school project hebben we een game gemaakt die op deze website staat.
+                Op deze website staan ook aparte portfolio's over ons.
+                Daarin staat een link die verwijst naar een ander pagina waar er wat staat over onze favoriete games.
+                Ook hebben we een "log in" pagina waarmee je in de game kan inloggen.
+                Veel lees en speel plezier!
+            </p>
+        </div>
+    </div>
+    <footer>
+        <p> © Copyright MNA </p>
+    </footer>
+
+</body>
+
+</html>

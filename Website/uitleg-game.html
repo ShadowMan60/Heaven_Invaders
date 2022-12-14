@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="icon" type="images/x-icon" href="images/final_character.png">
+  <link rel="stylesheet" href="uitleg-game.css">
+  <title>Uitleg Game</title>
+</head>
+
+<body>
+
+  <header>
+
+    <img class="img1" src="images/final_character.png" alt="">
+
+    <nav>
+      <a href="mn-index.html">Homepage</a>
+
+      <div class="SearchMenu" onmouseleave="turnOn(false)" onmouseenter="turnOn(true)">
+        <a href="x" onmouseover="turnOn(true)">Portofolio's</a>
+        <ul id="myMenu" class="hiddenDropdown">
+          <li><a href="mn-portfolio.html">Metehan</a></li>
+          <li><a href="neos-portfolio.html">Neo</a></li>
+          <li><a href="x">Aiden</a></li>
+        </ul>
+      </div>
+      <a href="uitleg-game.html">Game Uitleg</a>
+      <a href="mn-game.html">Game</a>
+      <button class="button" onclick="window.location.href='LogIn.html';">Log in</button>
+    </nav>
+
+  </header>
+
+  <h1>Uitleg game</h1>
+
+  <div class="box">
+    <div class="txt">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Facilis cum fuga qui quae blanditiis inventore necessitatibus
+        nostrum debitis veritatis laboriosam possimus ipsum provident
+        fugit vero sapiente, nemo cumque eligendi ea.
+      </p>
+
+      <img src="images/temp.jpg" alt="">
+
+    </div>
+  </div>
+
+  <footer>
+    <p>Copyright MNA</p>
+  </footer>
+
+  <script>
+    function turnOn(isOn) {
+      item = document.getElementById("myMenu");
+      if (isOn) {
+        item.classList.remove('hiddenDropdown')
+      } else {
+        item.classList.add("hiddenDropdown")
+      }
+    }
+  </script>
+
+</body>
+
+</html>

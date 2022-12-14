@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="mn-portfolio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="icon" type="images/x-icon" href="images/final_character.png">
+
+</head>
+
+<body>
+    <header>
+
+        <a href="mn-index.html"><img class="img1" src="images/final_character.png" alt=""></a>
+
+        <nav>
+            <a href="mn-index.html">Homepage</a>
+
+            <div class="SearchMenu" onmouseleave="turnOn(false)" onmouseenter="turnOn(true)">
+                <a href="x" onmouseover="turnOn(true)">Portofolio's</a>
+                <ul id="myMenu" class="hiddenDropdown">
+                    <li><a href="mn-portfolio.html">Metehan</a></li>
+                    <li><a href="neos-portfolio.html">Neo</a></li>
+                    <li><a href="x">Aiden</a></li>
+                </ul>
+            </div>
+            <a href="uitleg-game.html">Game Uitleg</a>
+            <a href="mn-game.html">Game</a>
+            <button class="button" onclick="window.location.href='LogIn.html';">Log in</button>
+        </nav>
+
+    </header>
+
+    <h1>Portfolio</h1>
+
+    <div class="portfolio-flexcontainer">
+
+        <div class="portfolio-flexchild">
+            <p id="p-1">Hallo, ik ben Metehan Sarikus.</p>
+            <p id="p-2">Ik ben 16 jaar oud en ik zit bij Techniek College Rotterdam op school.
+                Ik ben van Turkse afkomst en ik ben in Nederland geboren.
+                Samen met mijn klasgenoten heb ik een voor een school project een website en game gemaakt.
+                Veel lees en speel plezier!
+            </p>
+            <p id="p-3">De link hieronder verwijst naar een pagina met mijn favoriete games.</p>
+
+            <button class="button-2" onclick="window.location.href='mn-favoriete_games.html';">Favoriete games</button>
+        </div>
+
+        <div class="img3-flexcontainer">
+            <div class="img3-flexchild">
+                <img class="portfolio_image" src="images/Image_mn.jpeg" alt="Een foto van mij">
+
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p> © Copyright MNA</p>
+    </footer>
+
+    <script>
+        function turnOn(isOn) {
+            item = document.getElementById("myMenu");
+            if (isOn) {
+                item.classList.remove('hiddenDropdown')
+            } else {
+                item.classList.add("hiddenDropdown")
+            }
+        }
+    </script>
+</body>
+
+</html>

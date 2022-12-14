@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="61fc19fa-1385-4b28-82d6-c512c33e9222" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Game - Copy/.vscode/settings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mn-game.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mn-game.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neo's-games.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neo's-portfolio.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uitleg-game.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Game - Copy/.vscode/launch.json" beforeDir="false" afterPath="$PROJECT_DIR$/Game - Copy/.vscode/launch.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Game - Copy/.vscode/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../.vscode/settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Game - Copy/a.html" beforeDir="false" afterPath="$PROJECT_DIR$/Game - Copy/a.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Game - Copy/favoriete_games.css" beforeDir="false" afterPath="$PROJECT_DIR$/mn-favoriete_games.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Game - Copy/favoriete_games.html" beforeDir="false" afterPath="$PROJECT_DIR$/mn-favoriete_games.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Game - Copy/images/Image[104].jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Game - Copy/images/Screenshot_20221130_094400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Game - Copy/images/Screenshot_20221130_104847.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Game - Copy/images/Screenshot_20221130_104957.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Game - Copy/images/alexander-jawfox-R_6kw7NUTLY-unsplash (1).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Game - Copy/images/final charactar.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/final character.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Game - Copy/images/space.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Game - Copy/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Game - Copy/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Game - Copy/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/mn-index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Game - Copy/index2.css" beforeDir="false" afterPath="$PROJECT_DIR$/mn-index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Game - Copy/index2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Game - Copy/portfolio.css" beforeDir="false" afterPath="$PROJECT_DIR$/mn-portfolio.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Game - Copy/portfolio.html" beforeDir="false" afterPath="$PROJECT_DIR$/mn-portfolio.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FavGame-Neo.css" beforeDir="false" afterPath="$PROJECT_DIR$/FavGame-Neo.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InfoGame.drawio" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/InfoGame.drawio" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LogIn.css" beforeDir="false" afterPath="$PROJECT_DIR$/LogIn.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LogIn.html" beforeDir="false" afterPath="$PROJECT_DIR$/LogIn.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uitleg.css" beforeDir="false" afterPath="$PROJECT_DIR$/uitleg-game.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UitlegGame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/final charactar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/neo's games.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/neo's pagina.drawio" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/neo's pagina.drawio" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/neo's portofolio.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/neo's-games.css" beforeDir="false" afterPath="$PROJECT_DIR$/neo's-games.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/neo-portofolio.css" beforeDir="false" afterPath="$PROJECT_DIR$/neo's-portfolio.css" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2IroRpMLsa8rIY0svoSlrSOHr4F" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/aidan/OneDrive/Bureaublad/Heaven-Invaders/Website",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="61fc19fa-1385-4b28-82d6-c512c33e9222" name="Changes" comment="" />
+      <created>1670949058005</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1670949058005</updated>
+      <workItem from="1670949059420" duration="14000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

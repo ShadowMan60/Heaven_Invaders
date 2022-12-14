@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="neos-portfolio.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="icon" type="images/x-icon" href="images/final_character.png">
+  <title>Neo's Portfolio</title>
+</head>
+
+<body>
+
+  <header>
+
+    <a href="mn-index.html"><img class="img1" src="images/final_character.png" alt=""></a>
+    <nav>
+
+      <a href="mn-index.html">Homepage</a>
+
+      <div class="SearchMenu" onmouseleave="turnOn(false)" onmouseenter="turnOn(true)">
+        <a href="x" onmouseover="turnOn(true)">Portofolio's</a>
+        <ul id="myMenu" class="hiddenDropdown">
+          <li><a href="mn-portfolio.html">Metehan</a></li>
+          <li><a href="neos-portfolio.html">Neo</a></li>
+          <li><a href="x">Aiden</a></li>
+        </ul>
+      </div>
+      <a href="uitleg-game.html">Game Uitleg</a>
+      <a href="mn-game.html">Game</a>
+      <button class="button" onclick="window.location.href='LogIn.html';">Log in</button>
+    </nav>
+
+  </header>
+
+
+  <h1>Portfolio</h1>
+
+  <div class="upper-bar">
+    <div class="txt1">
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        Error facere nam optio aspernatur similique quos aperiam,
+        commodi sint nihil, cum sunt alias accusamus modi totam nulla ab quam minima architecto?
+      </p>
+    </div>
+
+    <div class="txt2">
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Commodi cum dolores ab at perferendis animi, deleniti explicabo
+        libero voluptatem omnis totam eveniet nostrum accusantium sit ratione cumque soluta quos neque?
+      </p>
+    </div>
+
+  </div>
+
+  <div class="lower-bar">
+    <div class="txt3">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Culpa est laboriosam voluptates voluptas quidem velit. Possimus,
+        laboriosam commodi? Fugit quod consequuntur blanditiis tenetur animi ipsum ullam necessitatibus suscipit fuga
+        illo?
+      </p>
+      <button class="button" onclick="window.location.href='neos-games,html';">Favoriete games</button>
+    </div>
+
+    <div class="img-txt3">
+      <img class="portfolio_img" src="images/temp.jpg" alt="">
+    </div>
+  </div>
+
+  <footer>
+    <p> © Copyright MNA </p>
+  </footer>
+
+  <script>
+    function turnOn(isOn) {
+      item = document.getElementById("myMenu");
+      if (isOn) {
+        item.classList.remove('hiddenDropdown')
+      } else {
+        item.classList.add("hiddenDropdown")
+      }
+    }
+  </script>
+
+</body>
+
+</html>

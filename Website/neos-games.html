@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="neos-games.css">
+  <link rel="icon" type="images/x-icon" href="images/final_character.png">
+  <title>Neo's favoriete games</title>
+</head>
+
+<body>
+
+  <header>
+
+    <a href="mn-index.html"><img class="img1" src="images/final_character.png" alt=""></a>
+
+    <nav>
+      <a href="mn-index.html">Homepage</a>
+
+      <div class="SearchMenu" onmouseleave="turnOn(false)" onmouseenter="turnOn(true)">
+        <a href="x" onmouseover="turnOn(true)">Portofolio's</a>
+        <ul id="myMenu" class="hiddenDropdown">
+          <li><a href="mn-portfolio.html">Metehan</a></li>
+          <li><a href="neos-portfolio.html">Neo</a></li>
+          <li><a href="x">Aiden</a></li>
+        </ul>
+      </div>
+      <a href="uitleg-game.html">Game Uitleg</a>
+      <a href="x">Game</a>
+      <button class="button" onclick="window.location.href='LogIn.html';">Log in</button>
+    </nav>
+
+  </header>
+
+  <h1>Mijn favoriete games</h1>
+
+  <div class="bar">
+    <div class="game1">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo sapiente itaque officia tempore quidem
+        possimus consectetur eveniet doloremque. Et reiciendis minus aliquid qui iure rerum expedita ipsum a impedit
+        adipisci!
+      </p>
+
+      <img class="img_sot" src="images/NSea_of_Thieves.png" alt="">
+    </div>
+
+    <div class="game2">
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore ab maxime quibusdam minus vero doloribus
+        maiores pariatur dolorem officia mollitia distinctio recusandae, qui alias quam cumque optio veniam nam
+        voluptas.
+      </p>
+
+      <img class="img_mine" src="images/NeoMinecraft.png" alt="">
+    </div>
+
+    <div class="game3">
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum veritatis,
+        magnam optio ducimus dolore doloribus non accusamus doloremque quod accusantium beatae nesciunt
+        tenetur minus adipisci. Excepturi quis debitis obcaecati blanditiis?
+      </p>
+      <img class="img_gta" src="images/NeoGTAV.png" alt="">
+    </div>
+
+  </div>
+
+  <footer>
+    <p>Copyright MNA</p>
+  </footer>
+
+  <script>
+    function turnOn(isOn) {
+      item = document.getElementById("myMenu");
+      if (isOn) {
+        item.classList.remove('hiddenDropdown')
+      } else {
+        item.classList.add("hiddenDropdown")
+      }
+    }
+  </script>
+
+</body>
+
+</html>
