@@ -37,7 +37,7 @@ a{
 }
 
 button{
-    color: #101010;
+    color: #181818;
     border-radius: 20px;
     margin-right: 20px;
     width: 100px;
@@ -70,7 +70,6 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* margin: 15px; */
     gap: 15px;
 }
 
@@ -131,7 +130,7 @@ li  {
     margin-bottom: 5px;
     list-style: none;
     gap: 10px;
-    background-color: #101010;
+    background-color: #181818;
 }
 
 ul{
