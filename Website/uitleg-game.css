@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    background-color: #101010;
+    background-color: #181818;
     color: white;
     font-family: 'Montserrat', sans-serif;
 }
@@ -16,8 +16,11 @@ nav{
     justify-content: flex-end;
     margin-top: 30px;
 }
+
 .img1{
     margin-left: 50px;
+    height: 100px;
+    width: 100px;
 }
 
 a{
@@ -28,6 +31,7 @@ a{
     font-weight: bold;
     font-size: 20px;
 }
+
 p{
     font-weight: bold;
 }
@@ -81,7 +85,6 @@ ul{
     position: fixed;
     margin-left: -40px;
 }
-
 
 footer{
     position: fixed;
