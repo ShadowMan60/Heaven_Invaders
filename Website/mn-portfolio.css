@@ -61,6 +61,17 @@ p{
 
 #p-3{
     color: white;
+    font-weight: bold;
+    font-size: larger;
+}
+
+em{
+    font-style: normal;
+    text-decoration: underline;
+}
+
+#p-4{
+    color: white;
     font-size: 18px;
 }
 
