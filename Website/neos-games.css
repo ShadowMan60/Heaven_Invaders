@@ -82,7 +82,7 @@ p{
 }
 
 .bar .game1 {
-    background-color: black;
+    background-color: #181818;
     border-width: 3px;
     border: 3px;
     border-radius: 5px;
@@ -99,7 +99,7 @@ p{
 }
 
 .bar .game2 {
-    background-color: black;
+    background-color: #181818;
     border-width: 3px;
     border: 3px;
     border-radius: 5px;
@@ -116,7 +116,7 @@ p{
 }
 
 .bar .game3 {
-    background-color: black;
+    background-color: #181818;
     border-width: 3px;
     border-style: solid;
     border-color: white;
