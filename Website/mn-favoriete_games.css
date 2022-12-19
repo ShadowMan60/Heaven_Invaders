@@ -67,6 +67,27 @@ p{
     margin-left: 0px;
 }
 
+#p-krunker{
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+#p-wolfstein3d{
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+#p-warbrokers{
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: 10px;
+}
+
 button{
     color: #181818;
     border-radius: 20px;
