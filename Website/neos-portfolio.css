@@ -32,7 +32,7 @@ a{
 }
 
 .portfolio_img{
-    height: 230px;
+    height: 500px;
     width: 400px;
 }
 
@@ -66,58 +66,31 @@ p{
     color: white;
 }
 
-.upper-bar  {
+.bar  {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 15px;
 }
 
-.lower-bar  {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 15px;
-    gap: 15px;
+.bar .txt   {
+    flex-direction: column;
 }
-
-.upper-bar .txt1    {
-    border: 3px;
-    border-style: solid;
-    border-color: white;
-    border-radius: 5px;
-    padding: 5px;
-    height: 230px;
-    width: 740px;
+.bar .txt .txt1    {
+    height: min-content;
+    width: 1000px;
 }
-
-.upper-bar .txt2    {
-    border: 3px;
-    border-style: solid;
-    border-color: white;
-    border-radius: 5px;
-    padding: 5px;
-    height: 230px;
-    width: 660px;
-}
-
-.lower-bar .txt3    {
-    border: 3px;
-    border-style: solid;
-    border-color: white;
-    border-radius: 5px;
-    padding: 5px;
-
-    height: 230px;
+.bar .txt .txt2  {
+    height: min-content;
     width: 1000px;
 }
 
-.img-txt3{
+.bar .img{
     border: 3px;
     border-color: white;
     border-style: solid;
     border-radius: 5px;
-    height: 230px;
+    height: 499px;
     width: 400px;
 }
 
