@@ -43,7 +43,7 @@ class Player{
         }
     }
 
-    //update de game
+    //updatet de game
     update() {
         
         if(this.position.x > canvas.width){
@@ -54,24 +54,72 @@ class Player{
         this.position.x += this.velocity.x;
     }
 }
-////////////////////////////////////////////////
+
+//Enemy karakter
+class Enemy{
+    constructor(){
+
+        //positie van de Enemy
+        this.position = {
+            x: 698,
+            y: 200
+        }
+
+        //snelheid van de Enemy
+        this.velocity = {
+            x: 0,
+            y: 0
+        }
+
+        //image
+        const image = new Image()
+        image.src = "images/enemy.png";
+        
+
+        //load de image en pakt de values
+        image.onload = () => {
+            //-
+            this.image = image;
+            this.width = image.width - 390
+            this.height = image.height - 390
+        }
+    }
+
+    //drawt de image als de image geladen is
+    draw(){
+        if(this.image){
+            ctx.drawImage(this.image, this.position.x, this.position.y, this.width, this.height);
+        }
+    }
+
+    //update de game
+    update() {
+
+        this.position.x += this.velocity.x;
+        this.position.y += this.velocity.y;
+    }
+}
 
 
+//callt de "Player" class
 const player = new Player();
-player.draw();
+//callt de "Enemy" class
+const enemy = new Enemy();
 
-//function om de player op de canvas te drawen
+//function om de karakters op de canvas te drawen
 function animate(){
     requestAnimationFrame(animate);
 
-    //afmetingen van de canvas
-    ctx.fillStyle = "gray";
+    // kleur en afmetingen van de canvas
+    ctx.fillStyle = "white";
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-    //drawt de image
-    player.draw();
+    //"draw()" drawt de image
+    //"update()" updatet de image
+    enemy.draw();
+    enemy.update();
 
-    //update de image
+    player.draw();
     player.update();
 }
 
@@ -82,27 +130,20 @@ animate();
 addEventListener("keydown", ({key}) => {
     switch (key){
         case "a":
-            console.log("left");
-            player.velocity.x = -15;
+            player.velocity.x = -7;
             break
         case "d":
-            console.log("right");
-            player.velocity.x = 15;
+            player.velocity.x = 7;
+            break
     }
 })
 
 addEventListener("keyup", ({key}) => {
     switch (key){
         case "a":
-            console.log("left");
             player.velocity.x = 0;
             break
         case "d":
-            console.log("right");
             player.velocity.x = 0;
     }
 })
-
-
-
-

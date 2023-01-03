@@ -1,7 +1,8 @@
 *{
     margin: 0;
     padding: 0;
-    background-color: gray;
+    background-color: white;
+    overflow: hidden;
 }
 
 #speelveld-container{
