@@ -32,8 +32,18 @@ a{
     font-size: 20px;
 }
 
-p{
-    font-weight: bold;
+.p-container{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    /* border-color: aliceblue;
+    border-style: solid; */
+}
+
+.p-uitleg{
+    width: 800px;
+    text-align: center;
 }
 
 button{

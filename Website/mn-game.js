@@ -149,11 +149,13 @@ class Shield{
     }
 }
 
-//callt de "Player" class
+//maakt een object instance van de Player class
 const player = new Player();
-//callt de "Enemy" class
+
+//maakt een object instance van de Enemy class
 const enemy = new Enemy();
-//callt de "Shield" class
+
+//maakt een object instance van de Shield
 const shield = new Shield();
 
 //function om de karakters op de canvas te drawen
