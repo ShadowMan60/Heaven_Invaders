@@ -13,7 +13,7 @@ class Player{
         //positie van de speler
         this.position = {
             x: 700,
-            y: 590
+            y: 570
         }
 
         //snelheid van de speler
@@ -31,8 +31,8 @@ class Player{
         image.onload = () => {
             //-
             this.image = image;
-            this.width = image.width - 390 
-            this.height = image.height - 390
+            this.width = image.width - 400 
+            this.height = image.height - 400
         }
     }
 
@@ -61,7 +61,7 @@ class Enemy{
 
         //positie van de Enemy
         this.position = {
-            x: 698,
+            x: 700,
             y: 200
         }
 
@@ -80,8 +80,8 @@ class Enemy{
         image.onload = () => {
             //-
             this.image = image;
-            this.width = image.width - 390
-            this.height = image.height - 390
+            this.width = image.width - 400
+            this.height = image.height - 400
         }
     }
 
@@ -100,11 +100,61 @@ class Enemy{
     }
 }
 
+//Shield karakters
+class Shield{
+    constructor(){
+
+        //positie van de shield
+        this.position = {
+            x: 100,
+            y: 500
+        }
+
+        //snelheid van de shield
+        this.velocity = {
+            x: 0,
+            y: 0
+        }
+
+        //image
+        const image = new Image()
+        image.src = "images/Shield.png";
+        
+
+        //load de image en pakt de values
+        image.onload = () => {
+            //-
+            this.image = image;
+            this.width = image.width - 25
+            this.height = image.height - 50
+        }
+    }
+
+    //drawt de image als de image geladen is
+    draw(){
+        if(this.image){
+            ctx.drawImage(this.image, this.position.x, this.position.y, this.width, this.height);
+        }
+    }
+
+    //updatet de game
+    update() {
+        
+        if(this.position.x > canvas.width){
+            this.velocity.x = 0;
+            this.position.x = edge;
+        }
+
+        this.position.x += this.velocity.x;
+    }
+}
 
 //callt de "Player" class
 const player = new Player();
 //callt de "Enemy" class
 const enemy = new Enemy();
+//callt de "Shield" class
+const shield = new Shield();
 
 //function om de karakters op de canvas te drawen
 function animate(){
@@ -121,6 +171,9 @@ function animate(){
 
     player.draw();
     player.update();
+
+    shield.draw();
+    shield.update();
 }
 
 //voert de functie uit
