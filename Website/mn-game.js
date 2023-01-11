@@ -117,7 +117,7 @@ class Shield{
         
         //positie van de shield
         this.position = {
-            x: 100 + (j * 304),
+            x: 110 + (j * 299),
             y: 500
         }
         j++
