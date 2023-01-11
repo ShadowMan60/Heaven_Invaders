@@ -46,14 +46,19 @@ class Player{
     //updatet de game
     update() {
         
-        if(this.position.x > canvas.width){
+        if(this.position.x > canvas.width - player.width){
             this.velocity.x = 0;
-            this.position.x = edge;
+            this.position.x = canvas.width - player.width;
+        } else if(this.position.x < 0){
+            this.velocity.x = 0;
+            this.position.x = 0;
         }
 
         this.position.x += this.velocity.x;
     }
 }
+//hoeveel enemys
+let i = 0;
 
 //Enemy karakter
 class Enemy{
@@ -61,10 +66,14 @@ class Enemy{
 
         //positie van de Enemy
         this.position = {
-            x: 700,
+            x: 50 + (i * 130),
             y: 200
         }
-
+        i++
+        if (i > 8) {
+            this.position.y = 150;
+            this.position.x = 50 + ((i - 9) * 130);
+        }
         //snelheid van de Enemy
         this.velocity = {
             x: 0,
@@ -99,16 +108,19 @@ class Enemy{
         this.position.y += this.velocity.y;
     }
 }
-
+//hoeveel shields
+let j = 0;
 //Shield karakters
 class Shield{
     constructor(){
 
+        
         //positie van de shield
         this.position = {
-            x: 100,
+            x: 100 + (j * 304),
             y: 500
         }
+        j++
 
         //snelheid van de shield
         this.velocity = {
@@ -154,9 +166,32 @@ const player = new Player();
 
 //maakt een object instance van de Enemy class
 const enemy = new Enemy();
+<<<<<<< Updated upstream
 
 //maakt een object instance van de Shield
+=======
+const enemy2 = new Enemy();
+const enemy3 = new Enemy();
+const enemy4 = new Enemy();
+const enemy5 = new Enemy();
+const enemy6 = new Enemy();
+const enemy7 = new Enemy();
+const enemy8 = new Enemy();
+const enemy9 = new Enemy();
+const enemy10 = new Enemy();
+const enemy11 = new Enemy();
+const enemy12 = new Enemy();
+const enemy13 = new Enemy();
+const enemy14 = new Enemy();
+const enemy15 = new Enemy();
+const enemy16 = new Enemy();
+//callt de "Shield" class
+>>>>>>> Stashed changes
 const shield = new Shield();
+const shield2 = new Shield();
+const shield3 = new Shield();
+const shield4 = new Shield();
+const shield5 = new Shield();
 
 //function om de karakters op de canvas te drawen
 function animate(){
@@ -168,14 +203,30 @@ function animate(){
 
     //"draw()" drawt de image
     //"update()" updatet de image
-    enemy.draw();
-    enemy.update();
+    player.draw(); player.update();
 
-    player.draw();
-    player.update();
+    enemy.draw(); enemy.update();
+    enemy2.draw(); enemy2.update();
+    enemy3.draw(); enemy3.update();
+    enemy4.draw(); enemy4.update();
+    enemy5.draw(); enemy5.update();
+    enemy6.draw(); enemy6.update();
+    enemy7.draw(); enemy7.update();
+    enemy8.draw(); enemy8.update();
+    enemy9.draw(); enemy9.update();
+    enemy10.draw(); enemy10.update();
+    enemy11.draw(); enemy11.update();
+    enemy12.draw(); enemy12.update();
+    enemy13.draw(); enemy13.update();
+    enemy14.draw(); enemy14.update();
+    enemy15.draw(); enemy15.update();
+    enemy16.draw(); enemy16.update();
 
-    shield.draw();
-    shield.update();
+    shield.draw(); shield.update();
+    shield2.draw(); shield2.update();
+    shield3.draw(); shield3.update();
+    shield4.draw(); shield4.update();
+    shield5.draw(); shield5.update();
 }
 
 //voert de functie uit
