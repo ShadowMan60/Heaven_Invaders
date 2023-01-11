@@ -5,7 +5,6 @@ const ctx = canvas.getContext("2d");
 canvas.width    = innerWidth;
 canvas.height   = innerHeight;
 
-
 //player karakter
 class Player{
     constructor(){
@@ -13,7 +12,7 @@ class Player{
         //positie van de speler
         this.position = {
             x: 700,
-            y: 570
+            y: 630
         }
 
         //snelheid van de speler
@@ -67,17 +66,17 @@ class Enemy{
         //positie van de Enemy
         this.position = {
             x: 50 + (i * 130),
-            y: 200
+            y: 0
         }
         i++
         if (i > 8) {
-            this.position.y = 150;
+            this.position.y = 40;
             this.position.x = 50 + ((i - 9) * 130);
         }
         //snelheid van de Enemy
         this.velocity = {
-            x: 0,
-            y: 0
+            x: 4,
+            y: 0 
         }
 
         //image
@@ -101,16 +100,30 @@ class Enemy{
         }
     }
 
-    //update de game
+    //update de enemy class
     update() {
+
+        if(this.position.x > canvas.width - enemy.width){
+            this.velocity.x = -4
+            this.position.x = canvas.width - enemy.width;
+            this.position.y += 8;
+        } else if(this.position.x < 0){
+            this.velocity.x = 4;
+            this.position.x = 0;
+            this.position.y += 8;
+        }
+
 
         this.position.x += this.velocity.x;
         this.position.y += this.velocity.y;
+
+
     }
 }
+
 //hoeveel shields
 let j = 0;
-//Shield karakters
+//Shields
 class Shield{
     constructor(){
 
@@ -161,6 +174,11 @@ class Shield{
     }
 }
 
+const background = new Image();
+background.src = "images/background3.jpg"; 
+background.width = canvas.width;
+background.height = canvas.height;
+
 //maakt een object instance van de Player class
 const player = new Player();
 
@@ -181,6 +199,18 @@ const enemy13 = new Enemy();
 const enemy14 = new Enemy();
 const enemy15 = new Enemy();
 const enemy16 = new Enemy();
+// const enemy17 = new Enemy();
+// const enemy18 = new Enemy();
+// const enemy19 = new Enemy();
+// const enemy20 = new Enemy();
+// const enemy21 = new Enemy();
+// const enemy22 = new Enemy();
+
+const enemies = [enemy, enemy2, enemy3, enemy4,
+                enemy6, enemy7, enemy8, enemy9,
+                enemy10, enemy11, enemy12, enemy13
+                ,enemy14, enemy15, enemy16
+]
 
 //maakt een object instance van de shield class
 const shield = new Shield();
@@ -194,11 +224,13 @@ function animate(){
     requestAnimationFrame(animate);
 
     // kleur en afmetingen van de canvas
-    ctx.fillStyle = "white";
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 
     //"draw()" drawt de image
     //"update()" updatet de image
+
+    ctx.drawImage(background, -100, -100,);
+
     player.draw(); player.update();
 
     enemy.draw(); enemy.update();
@@ -217,6 +249,14 @@ function animate(){
     enemy14.draw(); enemy14.update();
     enemy15.draw(); enemy15.update();
     enemy16.draw(); enemy16.update();
+    // enemy17.draw(); enemy15.update();
+    // enemy18.draw(); enemy16.update();
+    // enemy19.draw(); enemy15.update();
+    // enemy20.draw(); enemy16.update();
+    // enemy21.draw(); enemy16.update();
+    // enemy22.draw(); enemy16.update();
+
+
 
     shield.draw(); shield.update();
     shield2.draw(); shield2.update();
