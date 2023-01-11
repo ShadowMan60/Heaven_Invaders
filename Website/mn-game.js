@@ -150,8 +150,8 @@ class Shield{
         image.onload = () => {
             //-
             this.image = image;
-            this.width = image.width - 25
-            this.height = image.height - 50
+            this.width = image.width * 2
+            this.height = image.height * 2
         }
     }
 
