@@ -166,10 +166,6 @@ const player = new Player();
 
 //maakt een object instance van de Enemy class
 const enemy = new Enemy();
-<<<<<<< Updated upstream
-
-//maakt een object instance van de Shield
-=======
 const enemy2 = new Enemy();
 const enemy3 = new Enemy();
 const enemy4 = new Enemy();
@@ -185,8 +181,8 @@ const enemy13 = new Enemy();
 const enemy14 = new Enemy();
 const enemy15 = new Enemy();
 const enemy16 = new Enemy();
-//callt de "Shield" class
->>>>>>> Stashed changes
+
+//maakt een object instance van de shield class
 const shield = new Shield();
 const shield2 = new Shield();
 const shield3 = new Shield();
