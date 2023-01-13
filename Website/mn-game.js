@@ -12,7 +12,7 @@ class Player{
         //positie van de speler
         this.position = {
             x: 700,
-            y: 630
+            y: 600
         }
 
         //snelheid van de speler
@@ -274,5 +274,6 @@ addEventListener("keyup", ({key}) => {
             break
         case "d":
             player.velocity.x = 0;
+            break
     }
 })
