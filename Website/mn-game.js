@@ -75,7 +75,7 @@ class Enemy{
         }
         //snelheid van de Enemy
         this.velocity = {
-            x: 4,
+            x: 2,
             y: 0 
         }
 
@@ -104,13 +104,13 @@ class Enemy{
     update() {
 
         if(this.position.x > canvas.width - enemy.width){
-            this.velocity.x = -4
+            this.velocity.x = -2
             this.position.x = canvas.width - enemy.width;
-            this.position.y += 8;
+            this.position.y += 20;
         } else if(this.position.x < 0){
-            this.velocity.x = 4;
+            this.velocity.x = 2;
             this.position.x = 0;
-            this.position.y += 8;
+            this.position.y += 20;
         }
 
 
@@ -199,17 +199,12 @@ const enemy13 = new Enemy();
 const enemy14 = new Enemy();
 const enemy15 = new Enemy();
 const enemy16 = new Enemy();
-// const enemy17 = new Enemy();
-// const enemy18 = new Enemy();
-// const enemy19 = new Enemy();
-// const enemy20 = new Enemy();
-// const enemy21 = new Enemy();
-// const enemy22 = new Enemy();
 
+//enemy array
 const enemies = [enemy, enemy2, enemy3, enemy4,
                 enemy6, enemy7, enemy8, enemy9,
-                enemy10, enemy11, enemy12, enemy13
-                ,enemy14, enemy15, enemy16
+                enemy10, enemy11, enemy12, 
+                enemy13, enemy14, enemy15, enemy16
 ]
 
 //maakt een object instance van de shield class
@@ -249,14 +244,6 @@ function animate(){
     enemy14.draw(); enemy14.update();
     enemy15.draw(); enemy15.update();
     enemy16.draw(); enemy16.update();
-    // enemy17.draw(); enemy15.update();
-    // enemy18.draw(); enemy16.update();
-    // enemy19.draw(); enemy15.update();
-    // enemy20.draw(); enemy16.update();
-    // enemy21.draw(); enemy16.update();
-    // enemy22.draw(); enemy16.update();
-
-
 
     shield.draw(); shield.update();
     shield2.draw(); shield2.update();
