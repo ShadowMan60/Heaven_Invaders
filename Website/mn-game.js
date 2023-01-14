@@ -75,7 +75,7 @@ class Enemy{
         }
         //snelheid van de Enemy
         this.velocity = {
-            x: 2,
+            x: 1,
             y: 0 
         }
 
@@ -104,13 +104,13 @@ class Enemy{
     update() {
 
         if(this.position.x > canvas.width - enemy.width){
-            this.velocity.x = -2
+            this.velocity.x = -1
             this.position.x = canvas.width - enemy.width;
-            this.position.y += 20;
+            this.position.y += 72;
         } else if(this.position.x < 0){
-            this.velocity.x = 2;
+            this.velocity.x = 1;
             this.position.x = 0;
-            this.position.y += 20;
+            this.position.y += 72;
         }
 
 
@@ -175,7 +175,7 @@ class Shield{
 }
 
 const background = new Image();
-background.src = "images/background3.jpg"; 
+background.src = "images/background4.jpg"; 
 background.width = canvas.width;
 background.height = canvas.height;
 
