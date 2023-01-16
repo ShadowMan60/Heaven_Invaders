@@ -113,7 +113,6 @@ class Enemy{
             this.position.y += 72;
         }
 
-
         this.position.x += this.velocity.x;
         this.position.y += this.velocity.y;
 
@@ -237,7 +236,7 @@ const player = new Player();
 //maakt een object instance van de Bullet class
 const bullet = new Bullet();
 
-//maakt een object instance van de Enemy class
+//maakt object instances van de Enemy class
 const enemy = new Enemy();
 const enemy2 = new Enemy();
 const enemy3 = new Enemy();
@@ -262,7 +261,7 @@ const enemies = [enemy, enemy2, enemy3, enemy4,
                 enemy13, enemy14, enemy15, enemy16
 ]
 
-//maakt een object instance van de shield class
+//maakt object instances van de shield class
 const shield = new Shield();
 const shield2 = new Shield();
 const shield3 = new Shield();
