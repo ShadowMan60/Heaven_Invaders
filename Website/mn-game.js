@@ -174,6 +174,58 @@ class Shield{
     }
 }
 
+class Bullet{
+    constructor(){
+
+        //positie van de speler
+        this.position = {
+            x: 749,
+            y: 650
+        }
+
+        //snelheid van de speler
+        this.velocity = {
+            x: 0,
+            y: 0
+        }
+
+        //image
+        const image = new Image()
+        image.src = "images/bullet.png";
+        
+
+        //load de image en pakt de values
+        image.onload = () => {
+            //-
+            this.image = image;
+            this.width = image.width;
+            this.height = image.height;
+        }
+    }
+
+    //drawt de image als de image geladen is
+    draw(){
+        if(this.image){
+            ctx.drawImage(this.image, this.position.x, this.position.y, this.width, this.height);
+        }
+    }
+
+    //updatet de game
+    update() {
+        if(this.position.y < 0){
+            this.velocity.y = 0;
+            this.position.y = 650;
+            this.position.x = player.position.x + 49;
+        } else if(this.position.y > canvas.width - bullet.width){
+            this.velocity.y = 0;
+            this.position.y = canvas.width - bullet.width;
+        }
+
+        this.position.y += this.velocity.y;
+        this.position.x += this.velocity.x;
+    }
+}
+
 const background = new Image();
 background.src = "images/background4.jpg"; 
 background.width = canvas.width;
@@ -181,6 +233,9 @@ background.height = canvas.height;
 
 //maakt een object instance van de Player class
 const player = new Player();
+
+//maakt een object instance van de Bullet class
+const bullet = new Bullet();
 
 //maakt een object instance van de Enemy class
 const enemy = new Enemy();
@@ -227,6 +282,7 @@ function animate(){
     ctx.drawImage(background, -100, -100,);
 
     player.draw(); player.update();
+    bullet.draw(); bullet.update();
 
     enemy.draw(); enemy.update();
     enemy2.draw(); enemy2.update();
@@ -260,10 +316,22 @@ addEventListener("keydown", ({key}) => {
     switch (key){
         case "a":
             player.velocity.x = -7;
+            if(bullet.position.y < 650){
+                bullet.velocity.x = 0;
+            } else {
+                bullet.velocity.x = -7;
+            }
             break
         case "d":
             player.velocity.x = 7;
+            if(bullet.position.y < 650){
+                bullet.velocity.x = 0;
+            } else {
+                bullet.velocity.x = 7;
+            }
             break
+        case "w":
+            bullet.velocity.y = -1;
     }
 })
 
@@ -271,9 +339,11 @@ addEventListener("keyup", ({key}) => {
     switch (key){
         case "a":
             player.velocity.x = 0;
+            bullet.velocity.x = 0;
             break
         case "d":
             player.velocity.x = 0;
+            bullet.velocity.x = 0;
             break
     }
 })
