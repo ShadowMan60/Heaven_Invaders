@@ -129,7 +129,7 @@ class Shield{
         
         //positie van de shield
         this.position = {
-            x: 110 + (j * 299),
+            x: 110 + (j * 310),
             y: 500
         }
         j++
@@ -164,12 +164,6 @@ class Shield{
     //updatet de game
     update() {
         
-        if(this.position.x > canvas.width){
-            this.velocity.x = 0;
-            this.position.x = edge;
-        }
-
-        this.position.x += this.velocity.x;
     }
 }
 
@@ -179,7 +173,7 @@ class Bullet{
         //positie van de speler
         this.position = {
             x: 749,
-            y: 650
+            y: 619
         }
 
         //snelheid van de speler
@@ -191,14 +185,13 @@ class Bullet{
         //image
         const image = new Image()
         image.src = "images/bullet.png";
-        
 
         //load de image en pakt de values
         image.onload = () => {
             //-
             this.image = image;
-            this.width = image.width;
-            this.height = image.height;
+            this.width = image.width*1.75;
+            this.height = image.height*1.75;
         }
     }
 
@@ -213,16 +206,17 @@ class Bullet{
     update() {
         if(this.position.y < 0){
             this.velocity.y = 0;
-            this.position.y = 650;
+            this.position.y = 620;
             this.position.x = player.position.x + 49;
-        } else if(this.position.y > canvas.height - bullet.width){
+        } else if(this.position.y > canvas.height - this.width){
             this.velocity.y = 0;
-            this.position.y = canvas.width - bullet.width;
+            this.position.y = canvas.width - this.width;
         }
-        if(this.position.x = shield.position.x){
-            this.velocity.y = 0;
-            this.position.y = 650;
-            this.position.x = player.position.x + 49;
+        if(this.position.x - this.width == shield.position.x + shield.width){
+                console.log(this.position.x);
+                this.velocity.y = 0;
+                this.position.y = 620;
+                this.position.x = player.position.x + 49;
         }
 
         this.position.y += this.velocity.y;
@@ -320,7 +314,7 @@ addEventListener("keydown", ({key}) => {
     switch (key){
         case "a":
             player.velocity.x = -7;
-            if(bullet.position.y < 650){
+            if(bullet.position.y < 619){
                 bullet.velocity.x = 0;
             } else {
                 bullet.velocity.x = -7;
@@ -328,7 +322,7 @@ addEventListener("keydown", ({key}) => {
             break
         case "d":
             player.velocity.x = 7;
-            if(bullet.position.y < 650){
+            if(bullet.position.y < 619){
                 bullet.velocity.x = 0;
             } else {
                 bullet.velocity.x = 7;
