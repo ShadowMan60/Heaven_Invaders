@@ -23,6 +23,11 @@ nav{
     width: 100px;
 }
 
+.img-game{
+    width: 700px;
+    height: 350px;
+}
+
 a{
     margin-right: 50px;
     color: white;
@@ -43,6 +48,7 @@ a{
 
 .p-uitleg{
     width: 800px;
+    height: 600px;
     text-align: center;
 }
 
