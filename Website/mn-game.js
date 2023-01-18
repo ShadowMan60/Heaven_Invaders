@@ -215,9 +215,14 @@ class Bullet{
             this.velocity.y = 0;
             this.position.y = 650;
             this.position.x = player.position.x + 49;
-        } else if(this.position.y > canvas.width - bullet.width){
+        } else if(this.position.y > canvas.height - bullet.width){
             this.velocity.y = 0;
             this.position.y = canvas.width - bullet.width;
+        }
+        if(this.position.x = shield.position.x){
+            this.velocity.y = 0;
+            this.position.y = 650;
+            this.position.x = player.position.x + 49;
         }
 
         this.position.y += this.velocity.y;
@@ -330,7 +335,7 @@ addEventListener("keydown", ({key}) => {
             }
             break
         case "w":
-            bullet.velocity.y = -1;
+            bullet.velocity.y = -5;
     }
 })
 
