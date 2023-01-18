@@ -312,8 +312,6 @@ class EBullet{
 
     //update de enemy bullet class
     update() {
-
-        if(Switch = 0){
             if(this.position.x > canvas.width - enemy.width/2){
                 this.velocity.x = -1
                 this.position.x = canvas.width - enemy.width/2 - this.width;
@@ -323,22 +321,9 @@ class EBullet{
                 this.position.x = enemy.width/2 - this.width/2 + 2;
                 this.position.y += 72;
             }
-        } else {
-            function Shoot(){
-                this.velocity.x = 0;
-                this.velocity.y = 5;
-            }
-        }
-        setInterval(Shoot(),2000);
-
-        
-        
 
         this.position.x += this.velocity.x;
         this.position.y += this.velocity.y;
-
-
-
 
     }
 }
