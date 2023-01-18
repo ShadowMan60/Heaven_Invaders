@@ -212,12 +212,49 @@ class Bullet{
             this.velocity.y = 0;
             this.position.y = canvas.width - this.width;
         }
-        if(this.position.x - this.width == shield.position.x + shield.width){
-                console.log(this.position.x);
+
+        if(this.position.x + this.width > shield.position.x && 
+        this.position.x < shield.position.x + shield.width){
+            if(this.position.y < shield.position.y + shield.height){
                 this.velocity.y = 0;
                 this.position.y = 620;
                 this.position.x = player.position.x + 49;
+            }
         }
+        if(this.position.x + this.width > shield2.position.x && 
+        this.position.x < shield2.position.x + shield2.width){
+            if(this.position.y < shield2.position.y + shield2.height){
+                this.velocity.y = 0;
+                this.position.y = 620;
+                this.position.x = player.position.x + 49;
+            }
+        }
+        if(this.position.x + this.width > shield3.position.x && 
+        this.position.x < shield3.position.x + shield3.width){
+            if(this.position.y < shield3.position.y + shield3.height){
+                this.velocity.y = 0;
+                this.position.y = 620;
+                this.position.x = player.position.x + 49;
+            }
+        }
+        if(this.position.x + this.width > shield4.position.x && 
+        this.position.x < shield4.position.x + shield4.width){
+            if(this.position.y < shield4.position.y + shield4.height){
+                this.velocity.y = 0;
+                this.position.y = 620;
+                this.position.x = player.position.x + 49;
+            }
+        }
+        if(this.position.x + this.width > shield5.position.x && 
+        this.position.x < shield5.position.x + shield5.width){
+            if(this.position.y < shield5.position.y + shield5.height){
+                this.velocity.y = 0;
+                this.position.y = 620;
+                this.position.x = player.position.x + 49;
+            }
+        }
+
+
 
         this.position.y += this.velocity.y;
         this.position.x += this.velocity.x;
@@ -255,8 +292,8 @@ const enemy16 = new Enemy();
 
 //enemy array
 const enemies = [enemy, enemy2, enemy3, enemy4,
-                enemy6, enemy7, enemy8, enemy9,
-                enemy10, enemy11, enemy12, 
+                enemy5, enemy6, enemy7, enemy8,
+                enemy9, enemy10, enemy11, enemy12, 
                 enemy13, enemy14, enemy15, enemy16
 ]
 
@@ -266,6 +303,10 @@ const shield2 = new Shield();
 const shield3 = new Shield();
 const shield4 = new Shield();
 const shield5 = new Shield();
+
+//shield array
+const shields = [shield, shield2, shield3, shield4, shield5
+]
 
 //function om de karakters op de canvas te drawen
 function animate(){
@@ -328,7 +369,7 @@ addEventListener("keydown", ({key}) => {
                 bullet.velocity.x = 7;
             }
             break
-        case "w":
+        case " ":
             bullet.velocity.y = -5;
     }
 })
