@@ -205,6 +205,31 @@ class Enemy{
             this.position.y += 72;
         }
 
+        if(this.position.x + this.width > shield.position.x && 
+            this.position.x < shield.position.x + shield.width){
+            if(this.position.y + this.height/1.5 > shield.position.y){
+                this.position.y += -432;
+                this.position.x = 0;
+                console.log("reset");
+            }
+        }
+
+        if(this.position.x + this.width > bullet.position.x && 
+            this.position.x < bullet.position.x + bullet.width){
+            if(this.position.y + this.height > bullet.position.y && 
+                this.position.y < bullet.position.y + bullet.height){
+                this.position.y = 1000;
+                this.position.x = canvas.width/2;
+                this.velocity.y = 0;
+                this.velocity.x = 0;
+                bullet.velocity.y = 0;
+                bullet.position.y = 620;
+                bullet.position.x = player.position.x + 49;
+                enemies.splice(this , this+1);
+                console.log("death");
+            }
+        }
+
         this.position.x += this.velocity.x;
         this.position.y += this.velocity.y;
 
@@ -303,12 +328,12 @@ class PBullet{
 
         if(this.position.x + this.width > shield.position.x && 
             this.position.x < shield.position.x + shield.width){
-                if(this.position.y < shield.position.y + shield.height){
-                    this.velocity.y = 0;
-                    this.position.y = 620;
-                    this.position.x = player.position.x + 49;
-                }
+            if(this.position.y < shield.position.y + shield.height){
+                this.velocity.y = 0;
+                this.position.y = 620;
+                this.position.x = player.position.x + 49;
             }
+        }
 
         if(this.position.x + this.width > shield2.position.x && 
         this.position.x < shield2.position.x + shield2.width){
@@ -376,14 +401,10 @@ const enemy13 = new Enemy();
 const enemy14 = new Enemy();
 const enemy15 = new Enemy();
 const enemy16 = new Enemy();
-const EnBu = new EBullet(enemy.position.x , enemy.position.y);
-const EnBu2 = new EBullet(enemy2.position.x , enemy2.position.y);
-const EnBu3 = new EBullet(enemy3.position.x , enemy3.position.y);
-const EnBu4 = new EBullet(enemy4.position.x , enemy4.position.y);
-const EnBu5 = new EBullet(enemy5.position.x , enemy5.position.y);
-const EnBu6 = new EBullet(enemy6.position.x , enemy6.position.y);
-const EnBu7 = new EBullet(enemy7.position.x , enemy7.position.y);
-const EnBu8 = new EBullet(enemy8.position.x , enemy8.position.y);
+const EnBu = new EBullet(enemy13.position.x , enemy13.position.y);
+const EnBu2 = new EBullet(enemy4.position.x , enemy4.position.y);
+const EnBu3 = new EBullet(enemy9.position.x , enemy9.position.y);
+const EnBu4 = new EBullet(enemy7.position.x , enemy7.position.y);
 
 //enemy array
 const enemies = [enemy, enemy2, enemy3, enemy4,
@@ -421,10 +442,10 @@ function animate(){
     enemy2.draw(); enemy2.update();     EnBu2.draw(); EnBu2.update();
     enemy3.draw(); enemy3.update();     EnBu3.draw(); EnBu3.update();
     enemy4.draw(); enemy4.update();     EnBu4.draw(); EnBu4.update();
-    enemy5.draw(); enemy5.update();     EnBu5.draw(); EnBu5.update();
-    enemy6.draw(); enemy6.update();     EnBu6.draw(); EnBu6.update();
-    enemy7.draw(); enemy7.update();     EnBu7.draw(); EnBu7.update();
-    enemy8.draw(); enemy8.update();     EnBu8.draw(); EnBu8.update();
+    enemy5.draw(); enemy5.update();     
+    enemy6.draw(); enemy6.update();     
+    enemy7.draw(); enemy7.update();     
+    enemy8.draw(); enemy8.update();     
     enemy9.draw(); enemy9.update();
     enemy10.draw(); enemy10.update();
     enemy11.draw(); enemy11.update();
