@@ -443,7 +443,7 @@ addEventListener("keydown", ({key}) => {
             }
             break
         case " ":
-            bullet.velocity.y = -5;
+            bullet.velocity.y = -8;
     }
 })
 addEventListener("keyup", ({key}) => {
