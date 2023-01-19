@@ -56,6 +56,94 @@ class Player{
         this.position.x += this.velocity.x;
     }
 }
+
+//Enemy bullet karakter
+class EBullet{
+    constructor(posX, posY){
+        
+        //positie van de spawn plek van bullet
+        this.position = {
+            x : posX + 50,
+            y : posY + 50
+        }
+
+        //snelheid van de bullet
+        this.velocity = {
+            x: 0,
+            y: 4 
+        }
+
+        //image
+        const image = new Image()
+        image.src = "images/bullet2.png";
+        
+
+        //load de image en pakt de values
+        image.onload = () => {
+            //-
+            this.image = image;
+            this.width = image.width*1.75;
+            this.height = image.height*1.75;
+        }
+    }
+
+    //drawt de image als de image geladen is
+    draw(){
+        if(this.image){
+            ctx.drawImage(this.image, this.position.x, this.position.y, this.width, this.height);
+        }
+    }
+
+    //update de enemy bullet class
+    update() {
+        const random = Math.floor(Math.random() * enemies.length);
+
+        if(this.position.y > canvas.height - this.width){
+            this.position.y = enemies[random].position.y + 50;
+            this.position.x = enemies[random].position.x + 50;
+        }
+
+        if(this.position.x + this.width > shield.position.x && 
+        this.position.x < shield.position.x + shield.width){
+            if(this.position.y > shield.position.y){
+                this.position.y = enemies[random].position.y + 50;
+                this.position.x = enemies[random].position.x + 50;
+            }
+        }
+
+        if(this.position.x + this.width > shield2.position.x && 
+        this.position.x < shield2.position.x + shield2.width){
+            if(this.position.y > shield2.position.y){
+                this.position.y = enemies[random].position.y + 50;
+                this.position.x = enemies[random].position.x + 50;
+            }
+        }
+        if(this.position.x + this.width > shield3.position.x && 
+        this.position.x < shield3.position.x + shield3.width){
+            if(this.position.y > shield3.position.y){
+                this.position.y = enemies[random].position.y + 50;
+                this.position.x = enemies[random].position.x + 50;
+            }
+        }
+        if(this.position.x + this.width > shield4.position.x && 
+        this.position.x < shield4.position.x + shield4.width){
+            if(this.position.y > shield4.position.y){
+                this.position.y = enemies[random].position.y + 50;
+                this.position.x = enemies[random].position.x + 50;
+            }
+        }
+        if(this.position.x + this.width > shield5.position.x && 
+        this.position.x < shield5.position.x + shield5.width){
+            if(this.position.y > shield5.position.y){
+                this.position.y = enemies[random].position.y + 50;
+                this.position.x = enemies[random].position.x + 50;
+            }
+        }
+        
+        this.position.y += this.velocity.y;
+    }
+}
+
 //hoeveel enemys
 let i = 0;
 
@@ -73,6 +161,7 @@ class Enemy{
             this.position.y = 40;
             this.position.x = 50 + ((i - 9) * 130);
         }
+
         //snelheid van de Enemy
         this.velocity = {
             x: 1,
@@ -83,7 +172,6 @@ class Enemy{
         const image = new Image()
         image.src = "images/enemy.png";
         
-
         //load de image en pakt de values
         image.onload = () => {
             //-
@@ -93,13 +181,17 @@ class Enemy{
         }
     }
 
+    
+
     //drawt de image als de image geladen is
     draw(){
         if(this.image){
             ctx.drawImage(this.image, this.position.x, this.position.y, this.width, this.height);
+            
         }
+        
     }
-
+        
     //update de enemy class
     update() {
 
@@ -115,7 +207,6 @@ class Enemy{
 
         this.position.x += this.velocity.x;
         this.position.y += this.velocity.y;
-
 
     }
 }
@@ -208,19 +299,17 @@ class PBullet{
             this.velocity.y = 0;
             this.position.y = 620;
             this.position.x = player.position.x + 49;
-        } else if(this.position.y > canvas.height - this.width){
-            this.velocity.y = 0;
-            this.position.y = canvas.width - this.width;
         }
 
         if(this.position.x + this.width > shield.position.x && 
-        this.position.x < shield.position.x + shield.width){
-            if(this.position.y < shield.position.y + shield.height){
-                this.velocity.y = 0;
-                this.position.y = 620;
-                this.position.x = player.position.x + 49;
+            this.position.x < shield.position.x + shield.width){
+                if(this.position.y < shield.position.y + shield.height){
+                    this.velocity.y = 0;
+                    this.position.y = 620;
+                    this.position.x = player.position.x + 49;
+                }
             }
-        }
+
         if(this.position.x + this.width > shield2.position.x && 
         this.position.x < shield2.position.x + shield2.width){
             if(this.position.y < shield2.position.y + shield2.height){
@@ -260,74 +349,6 @@ class PBullet{
         this.position.x += this.velocity.x;
     }
 }
-//hoeveel enemy bullets
-let k = 0;
-let Switch = 0;
-
-//Enemy bullet karakter
-class EBullet{
-    constructor(){
-
-        //positie van de Enemy
-        this.position = {
-            x: 100 + (k * 130),
-            y: 40
-        }
-        console.log(k + " amount");
-        console.log(this.position.x + " Xpos")
-        k++
-        
-        if (k > 8) {
-            this.position.y = 80;
-            this.position.x = 100 + ((k - 9) * 130);
-        }
-        //snelheid van de Enemy
-        this.velocity = {
-            x: 1,
-            y: 0 
-        }
-
-        //image
-        const image = new Image()
-        image.src = "images/bullet2.png";
-        
-
-        //load de image en pakt de values
-        image.onload = () => {
-            //-
-            this.image = image;
-            this.width = image.width*1.75;
-            this.height = image.height*1.75;
-        }
-    }
-
-    //drawt de image als de image geladen is
-    draw(){
-        if(this.image){
-            ctx.drawImage(this.image, this.position.x, this.position.y, this.width, this.height);
-        }
-    }
-
-    
-
-    //update de enemy bullet class
-    update() {
-            if(this.position.x > canvas.width - enemy.width/2){
-                this.velocity.x = -1
-                this.position.x = canvas.width - enemy.width/2 - this.width;
-                this.position.y += 72;
-            } else if(this.position.x < 0 + enemy.width/2 - this.width/2 - 2){
-                this.velocity.x = 1;
-                this.position.x = enemy.width/2 - this.width/2 + 2;
-                this.position.y += 72;
-            }
-
-        this.position.x += this.velocity.x;
-        this.position.y += this.velocity.y;
-
-    }
-}
-
 
 const background = new Image();
 background.src = "images/background4.jpg"; 
@@ -336,26 +357,7 @@ background.height = canvas.height;
 
 //maakt een object instance van de Player class
 const player = new Player();
-
-//maakt een object instance van de Bullet class
 const bullet = new PBullet();
-const Ebullet = new EBullet();
-const Ebullet2 = new EBullet();
-const Ebullet3 = new EBullet();
-const Ebullet4 = new EBullet();
-const Ebullet5 = new EBullet();
-const Ebullet6 = new EBullet();
-const Ebullet7 = new EBullet();
-const Ebullet8 = new EBullet();
-const Ebullet9 = new EBullet();
-const Ebullet10 = new EBullet();
-const Ebullet11 = new EBullet();
-const Ebullet12 = new EBullet();
-const Ebullet13 = new EBullet();
-const Ebullet14 = new EBullet();
-const Ebullet15 = new EBullet();
-const Ebullet16 = new EBullet();
-
 
 //maakt object instances van de Enemy class
 const enemy = new Enemy();
@@ -374,6 +376,14 @@ const enemy13 = new Enemy();
 const enemy14 = new Enemy();
 const enemy15 = new Enemy();
 const enemy16 = new Enemy();
+const EnBu = new EBullet(enemy.position.x , enemy.position.y);
+const EnBu2 = new EBullet(enemy2.position.x , enemy2.position.y);
+const EnBu3 = new EBullet(enemy3.position.x , enemy3.position.y);
+const EnBu4 = new EBullet(enemy4.position.x , enemy4.position.y);
+const EnBu5 = new EBullet(enemy5.position.x , enemy5.position.y);
+const EnBu6 = new EBullet(enemy6.position.x , enemy6.position.y);
+const EnBu7 = new EBullet(enemy7.position.x , enemy7.position.y);
+const EnBu8 = new EBullet(enemy8.position.x , enemy8.position.y);
 
 //enemy array
 const enemies = [enemy, enemy2, enemy3, enemy4,
@@ -405,25 +415,24 @@ function animate(){
 
     ctx.drawImage(background, -100, -100,);
 
-    player.draw(); player.update();
-    bullet.draw(); bullet.update();
-
-    enemy.draw(); enemy.update();       Ebullet.draw(); Ebullet.update();
-    enemy2.draw(); enemy2.update();     Ebullet2.draw(); Ebullet2.update();
-    enemy3.draw(); enemy3.update();     Ebullet3.draw(); Ebullet3.update();
-    enemy4.draw(); enemy4.update();     Ebullet4.draw(); Ebullet4.update();
-    enemy5.draw(); enemy5.update();     Ebullet5.draw(); Ebullet5.update();
-    enemy6.draw(); enemy6.update();     Ebullet6.draw(); Ebullet6.update();
-    enemy7.draw(); enemy7.update();     Ebullet7.draw(); Ebullet7.update();
-    enemy8.draw(); enemy8.update();     Ebullet8.draw(); Ebullet8.update();
-    enemy9.draw(); enemy9.update();     Ebullet9.draw(); Ebullet9.update();
-    enemy10.draw(); enemy10.update();   Ebullet10.draw(); Ebullet10.update();
-    enemy11.draw(); enemy11.update();   Ebullet11.draw(); Ebullet11.update();
-    enemy12.draw(); enemy12.update();   Ebullet12.draw(); Ebullet12.update();
-    enemy13.draw(); enemy13.update();   Ebullet13.draw(); Ebullet13.update();
-    enemy14.draw(); enemy14.update();   Ebullet14.draw(); Ebullet14.update();
-    enemy15.draw(); enemy15.update();   Ebullet15.draw(); Ebullet15.update();
-    enemy16.draw(); enemy16.update();   Ebullet16.draw(); Ebullet16.update();
+    player.draw(); player.update();     bullet.draw(); bullet.update();
+    
+    enemy.draw(); enemy.update();       EnBu.draw(); EnBu.update();
+    enemy2.draw(); enemy2.update();     EnBu2.draw(); EnBu2.update();
+    enemy3.draw(); enemy3.update();     EnBu3.draw(); EnBu3.update();
+    enemy4.draw(); enemy4.update();     EnBu4.draw(); EnBu4.update();
+    enemy5.draw(); enemy5.update();     EnBu5.draw(); EnBu5.update();
+    enemy6.draw(); enemy6.update();     EnBu6.draw(); EnBu6.update();
+    enemy7.draw(); enemy7.update();     EnBu7.draw(); EnBu7.update();
+    enemy8.draw(); enemy8.update();     EnBu8.draw(); EnBu8.update();
+    enemy9.draw(); enemy9.update();
+    enemy10.draw(); enemy10.update();
+    enemy11.draw(); enemy11.update();
+    enemy12.draw(); enemy12.update();
+    enemy13.draw(); enemy13.update();
+    enemy14.draw(); enemy14.update();
+    enemy15.draw(); enemy15.update();
+    enemy16.draw(); enemy16.update();
 
     shield.draw(); shield.update();
     shield2.draw(); shield2.update();
