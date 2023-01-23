@@ -167,9 +167,9 @@ class Enemy{
             y: 0
         }
         i++
-        if (i > 8) {
+        if (i > 10) {
             this.position.y = 40;
-            this.position.x = 50 + ((i - 9) * 130);
+            this.position.x = 50 + ((i - 11) * 130);
         }
         //snelheid van de Enemy
         this.velocity = {
@@ -195,23 +195,23 @@ class Enemy{
     }
     //update de enemy class
     update() {
-        if(this.position.x > canvas.width - enemy.width){
+        if(this.position.x > canvas.width - this.width){
             this.velocity.x = -1
-            this.position.x = canvas.width - enemy.width;
-            this.position.y += 72;
+            this.position.x = canvas.width - this.width;
+            this.position.y += this.height/1.30;
         } else if(this.position.x < 0){
             this.velocity.x = 1;
             this.position.x = 0;
-            this.position.y += 72;
+            this.position.y += this.height/1.30;
         }
-        if(this.position.x + this.width > shield.position.x && 
-            this.position.x < shield.position.x + shield.width){
-            if(this.position.y + this.height/1.5 > shield.position.y){
-                this.position.y += -432;
-                this.position.x = 0;
-                console.log("reset");
-            }
+        
+        if(this.position.y + this.height/1.5 > shield5.position.y 
+        && this.position.y  < shield5.position.y + shield5.height){
+            this.position.y += -6*(this.height/1.30);
+            this.position.x = 0;
+            console.log("reset");
         }
+        
         if(this.position.x + this.width > bullet.position.x && 
             this.position.x < bullet.position.x + bullet.width){
             if(this.position.y + this.height > bullet.position.y && 
@@ -227,6 +227,7 @@ class Enemy{
                 console.log("death");
             }
         }
+        
         this.position.x += this.velocity.x;
         this.position.y += this.velocity.y;
     }
@@ -378,15 +379,19 @@ const enemy13 = new Enemy();
 const enemy14 = new Enemy();
 const enemy15 = new Enemy();
 const enemy16 = new Enemy();
+const enemy17 = new Enemy();
+const enemy18 = new Enemy();
+const enemy19 = new Enemy();
+const enemy20 = new Enemy();
 const EnBu = new EBullet(enemy13.position.x , enemy13.position.y);
 const EnBu2 = new EBullet(enemy4.position.x , enemy4.position.y);
 const EnBu3 = new EBullet(enemy9.position.x , enemy9.position.y);
 const EnBu4 = new EBullet(enemy7.position.x , enemy7.position.y);
+const EnBu5 = new EBullet(enemy18.position.x , enemy19.position.y);
 //enemy array
-const enemies = [enemy, enemy2, enemy3, enemy4,
-                enemy5, enemy6, enemy7, enemy8,
-                enemy9, enemy10, enemy11, enemy12, 
-                enemy13, enemy14, enemy15, enemy16]
+const enemies = [enemy,  enemy2,  enemy3,  enemy4,  enemy5,  enemy6,  enemy7,  enemy8,  enemy9, enemy10,
+                enemy11, enemy12, enemy13, enemy14, enemy15, enemy16, enemy17, enemy18, enemy19, enemy20,
+                ]
 //maakt object instances van de shield class
 const shield = new Shield();
 const shield2 = new Shield();
@@ -408,18 +413,22 @@ function animate(){
     enemy2.draw(); enemy2.update();     EnBu2.draw(); EnBu2.update();
     enemy3.draw(); enemy3.update();     EnBu3.draw(); EnBu3.update();
     enemy4.draw(); enemy4.update();     EnBu4.draw(); EnBu4.update();
-    enemy5.draw(); enemy5.update();     shield.draw(); shield.update();
-    enemy6.draw(); enemy6.update();     shield2.draw(); shield2.update();
-    enemy7.draw(); enemy7.update();     shield3.draw(); shield3.update();
-    enemy8.draw(); enemy8.update();     shield4.draw(); shield4.update();
-    enemy9.draw(); enemy9.update();     shield5.draw(); shield5.update();
-    enemy10.draw(); enemy10.update();
+    enemy5.draw(); enemy5.update();     EnBu5.draw(); EnBu5.update();
+    enemy6.draw(); enemy6.update();     shield.draw(); shield.update();
+    enemy7.draw(); enemy7.update();     shield2.draw(); shield2.update();
+    enemy8.draw(); enemy8.update();     shield3.draw(); shield3.update();
+    enemy9.draw(); enemy9.update();     shield4.draw(); shield4.update();
+    enemy10.draw(); enemy10.update();   shield5.draw(); shield5.update();
     enemy11.draw(); enemy11.update();
     enemy12.draw(); enemy12.update();
     enemy13.draw(); enemy13.update();
     enemy14.draw(); enemy14.update();
     enemy15.draw(); enemy15.update();
     enemy16.draw(); enemy16.update();
+    enemy17.draw(); enemy17.update();
+    enemy18.draw(); enemy18.update();
+    enemy19.draw(); enemy19.update();
+    enemy20.draw(); enemy20.update();
 }
 //voert de functie uit
 animate();
